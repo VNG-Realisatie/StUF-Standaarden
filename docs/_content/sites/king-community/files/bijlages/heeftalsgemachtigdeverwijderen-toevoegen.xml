@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+	<s:Header>
+		<Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://www.egem.nl/StUF/sector/zkn/0310/updateZaak_Lk01</Action>
+	</s:Header>
+	<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<zakLk01 xmlns="http://www.egem.nl/StUF/sector/zkn/0310">
+			<stuurgegevens>
+				<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk01</berichtcode>
+				<zender xmlns="http://www.egem.nl/StUF/StUF0301">
+					<organisatie />
+					<applicatie>VTH-TST</applicatie>
+					<administratie>0362</administratie>
+					<gebruiker>GEMAVEEN\G5695</gebruiker>
+				</zender>
+				<ontvanger xmlns="http://www.egem.nl/StUF/StUF0301">
+					<organisatie />
+					<applicatie>ZaakAPP</applicatie>
+				</ontvanger>
+				<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">20171103125022988</referentienummer>
+				<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">20171103125022988</tijdstipBericht>
+				<entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">ZAK</entiteittype>
+			</stuurgegevens>
+			<parameters>
+				<mutatiesoort xmlns="http://www.egem.nl/StUF/StUF0301">W</mutatiesoort>
+				<indicatorOvername xmlns="http://www.egem.nl/StUF/StUF0301">I</indicatorOvername>
+			</parameters>
+			<object p6:entiteittype="ZAK" p6:sleutelVerzendend="1941002" p6:verwerkingssoort="W" xmlns:p6="http://www.egem.nl/StUF/StUF0301">
+				<identificatie>Z17-001277</identificatie>
+				<omschrijving>test 3</omschrijving>
+				<toelichting xsi:nil="true" p6:noValue="geenWaarde" />
+				<kenmerk>
+					<kenmerk>HZ_WABO-2017-0851</kenmerk>
+					<bron>VTHapplicatie</bron>
+				</kenmerk>
+				<startdatum>20171029</startdatum>
+				<registratiedatum>20171030</registratiedatum>
+				<zaakniveau>1</zaakniveau>
+				<deelzakenIndicatie>N</deelzakenIndicatie>
+				<p6:extraElementen>
+					<p6:extraElement naam="LocatieDossierId">0</p6:extraElement>
+					<p6:extraElement naam="globaleLocatie">Drie Kolommenplein 1A in Aalsmeer</p6:extraElement>
+					<p6:extraElement naam="Instantie">0362</p6:extraElement>
+				</p6:extraElementen>
+				<isVan p6:verwerkingssoort="I" p6:entiteittype="ZAKZKT">
+					<gerelateerde xsi:type="ZKT-kerngegevensKennisgeving" p6:entiteittype="ZKT" p6:sleutelVerzendend="957783" p6:verwerkingssoort="I">
+						<omschrijving>Aanvraag omgevingsvergunning</omschrijving>
+						<code>B1210</code>
+						<ingangsdatumObject xsi:nil="true" p6:noValue="geenWaarde" />
+					</gerelateerde>
+				</isVan>
+				<heeftBetrekkingOp p6:verwerkingssoort="I" p6:entiteittype="ZAKOBJ">
+					<gerelateerde xsi:type="OBJ-kerngegevensKennisgeving">
+						<adres xmlns:q1="http://www.egem.nl/StUF/sector/bg/0310" xsi:type="q1:AOA-zkn-kerngegevensKennisgeving" p6:entiteittype="AOA" p6:sleutelVerzendend="997772" p6:sleutelGegevensbeheer="15455" p6:verwerkingssoort="I">
+							<q1:identificatie xsi:nil="true" p6:noValue="geenWaarde" />
+							<q1:authentiek p6:metagegeven="true">N</q1:authentiek>
+							<q1:wpl.woonplaatsNaam>Amstelveen</q1:wpl.woonplaatsNaam>
+							<q1:gor.openbareRuimteNaam>Laan Nieuwer-Amstel</q1:gor.openbareRuimteNaam>
+							<q1:huisnummer>3</q1:huisnummer>
+							<q1:postcode>1182JR</q1:postcode>
+						</adres>
+					</gerelateerde>
+				</heeftBetrekkingOp>
+				<heeftBetrekkingOp p6:verwerkingssoort="I" p6:entiteittype="ZAKOBJ">
+					<gerelateerde xsi:type="OBJ-kerngegevensKennisgeving">
+						<adres xmlns:q2="http://www.egem.nl/StUF/sector/bg/0310" xsi:type="q2:AOA-zkn-kerngegevensKennisgeving" p6:entiteittype="AOA" p6:sleutelVerzendend="1046995" p6:sleutelGegevensbeheer="" p6:verwerkingssoort="I">
+							<q2:identificatie>0358200027931717</q2:identificatie>
+							<q2:authentiek p6:metagegeven="true">N</q2:authentiek>
+							<q2:wpl.woonplaatsNaam>Aalsmeer</q2:wpl.woonplaatsNaam>
+							<q2:gor.openbareRuimteNaam>Drie Kolommenplein</q2:gor.openbareRuimteNaam>
+							<q2:huisnummer>1</q2:huisnummer>
+							<q2:huisletter>A</q2:huisletter>
+							<q2:postcode>1431LA</q2:postcode>
+						</adres>
+					</gerelateerde>
+				</heeftBetrekkingOp>
+				<heeftAlsGemachtigde p6:entiteittype="ZAKBTRGMC" p6:verwerkingssoort="V">
+					<gerelateerde xsi:type="BTR-kerngegevensKennisgeving">
+						<natuurlijkPersoon xmlns:q3="http://www.egem.nl/StUF/sector/bg/0310" xsi:type="q3:NPS-zkn-kerngegevensKennisgeving" p6:entiteittype="NPS" p6:sleutelVerzendend="1062784" p6:sleutelGegevensbeheer="279169" p6:verwerkingssoort="I">
+							<q3:geslachtsnaam>Veen</q3:geslachtsnaam>
+							<q3:voorvoegselGeslachtsnaam>in 't</q3:voorvoegselGeslachtsnaam>
+							<q3:voorletters>P.</q3:voorletters>
+							<q3:voornamen>Piet</q3:voornamen>
+							<q3:geslachtsaanduiding>M</q3:geslachtsaanduiding>
+							<q3:geboortedatum xsi:type="p6:Datum-e">19271027</q3:geboortedatum>
+						</natuurlijkPersoon>
+					</gerelateerde>
+					<code>GEMACHTIGD</code>
+					<omschrijving>De persoon die gemachtigd is bij deze vergunning.</omschrijving>
+					<p6:extraElementen>
+						<p6:extraElement naam="RolCode">GEMACHTIGD</p6:extraElement>
+					</p6:extraElementen>
+				</heeftAlsGemachtigde>
+				<heeftAlsInitiator p6:entiteittype="ZAKBTRINI" p6:verwerkingssoort="I">
+					<gerelateerde xsi:type="BTR-kerngegevensKennisgeving">
+						<natuurlijkPersoon xmlns:q4="http://www.egem.nl/StUF/sector/bg/0310" xsi:type="q4:NPS-zkn-kerngegevensKennisgeving" p6:entiteittype="NPS" p6:sleutelVerzendend="997780" p6:sleutelGegevensbeheer="613859" p6:verwerkingssoort="I">
+							<q4:inp.bsn>100101011</q4:inp.bsn>
+							<q4:authentiek p6:metagegeven="true">N</q4:authentiek>
+							<q4:geslachtsnaam>Veen</q4:geslachtsnaam>
+							<q4:voorvoegselGeslachtsnaam>van</q4:voorvoegselGeslachtsnaam>
+							<q4:voorletters>A.</q4:voorletters>
+							<q4:voornamen>Anton</q4:voornamen>
+							<q4:geslachtsaanduiding>M</q4:geslachtsaanduiding>
+							<q4:geboortedatum xsi:type="p6:Datum-e">19270101</q4:geboortedatum>
+							<q4:verblijfsadres>
+								<q4:aoa.identificatie xsi:nil="true" p6:noValue="geenWaarde" />
+								<q4:authentiek p6:metagegeven="true">N</q4:authentiek>
+								<q4:wpl.woonplaatsNaam>Amstelveen</q4:wpl.woonplaatsNaam>
+								<q4:gor.openbareRuimteNaam>Laan Nieuwer-Amstel</q4:gor.openbareRuimteNaam>
+								<q4:aoa.postcode>1182JR</q4:aoa.postcode>
+								<q4:aoa.huisnummer>3</q4:aoa.huisnummer>
+							</q4:verblijfsadres>
+						</natuurlijkPersoon>
+					</gerelateerde>
+					<code>AANVRAGER</code>
+					<omschrijving>De aanvrager van de vergunning</omschrijving>
+				</heeftAlsInitiator>
+				<heeftAlsVerantwoordelijke p6:entiteittype="ZAKBTRVRA" p6:verwerkingssoort="I">
+					<gerelateerde xsi:type="BTR-kerngegevensKennisgeving">
+						<medewerker xsi:type="MDW-kerngegevensKennisgeving" p6:entiteittype="MDW" p6:sleutelVerzendend="1129003" p6:verwerkingssoort="I">
+							<identificatie xsi:nil="true" p6:noValue="geenWaarde" />
+							<achternaam>Hellebrekers</achternaam>
+							<voorletters>M.</voorletters>
+						</medewerker>
+					</gerelateerde>
+					<omschrijving xsi:nil="true" p6:noValue="geenWaarde" />
+				</heeftAlsVerantwoordelijke>
+				<heeftAlsOverigBetrokkene xsi:nil="true" p6:noValue="geenWaarde" p6:entiteittype="ZAKBTROVR" p6:verwerkingssoort="T" />
+				<heeft p6:entiteittype="ZAKSTT" p6:verwerkingssoort="I">
+					<gerelateerde p6:entiteittype="STT" p6:sleutelVerzendend="" p6:verwerkingssoort="I">
+						<zkt.code>B1210</zkt.code>
+						<zkt.omschrijving>Aanvraag omgevingsvergunning</zkt.omschrijving>
+						<volgnummer xsi:nil="true" p6:noValue="geenWaarde" />
+						<code>MSS00001</code>
+						<omschrijving>Geregistreerd</omschrijving>
+						<ingangsdatumObject xsi:nil="true" p6:noValue="geenWaarde" />
+					</gerelateerde>
+					<isGezetDoor p6:entiteittype="ZAKSTTBTR" p6:verwerkingssoort="T">
+						<gerelateerde>
+							<medewerker p6:entiteittype="MDW" p6:verwerkingssoort="I">
+								<identificatie xsi:nil="true" p6:noValue="geenWaarde" />
+							</medewerker>
+						</gerelateerde>
+						<rolOmschrijving xsi:nil="true" />
+						<rolomschrijvingGeneriek xsi:nil="true" />
+						<p6:tijdstipRegistratie xsi:nil="true" />
+					</isGezetDoor>
+				</heeft>
+			</object>
+			<object p6:entiteittype="ZAK" p6:sleutelVerzendend="1941002" p6:verwerkingssoort="W" xmlns:p6="http://www.egem.nl/StUF/StUF0301">
+				<identificatie>Z17-001277</identificatie>
+				<omschrijving>test met Martijn 3</omschrijving>
+				<toelichting xsi:nil="true" p6:noValue="geenWaarde" />
+				<kenmerk>
+					<kenmerk>HZ_WABO-2017-0851</kenmerk>
+					<bron>VTHapplicatie</bron>
+				</kenmerk>
+				<startdatum>20171029</startdatum>
+				<registratiedatum>20171030</registratiedatum>
+				<zaakniveau>1</zaakniveau>
+				<deelzakenIndicatie>N</deelzakenIndicatie>
+				<p6:extraElementen>
+					<p6:extraElement naam="LocatieDossierId">0</p6:extraElement>
+					<p6:extraElement naam="globaleLocatie">Drie Kolommenplein 1A in Aalsmeer</p6:extraElement>
+					<p6:extraElement naam="Instantie">0362</p6:extraElement>
+				</p6:extraElementen>
+				<isVan p6:verwerkingssoort="I" p6:entiteittype="ZAKZKT">
+					<gerelateerde xsi:type="ZKT-kerngegevensKennisgeving" p6:entiteittype="ZKT" p6:sleutelVerzendend="957783" p6:verwerkingssoort="I">
+						<omschrijving>Aanvraag omgevingsvergunning</omschrijving>
+						<code>B1210</code>
+						<ingangsdatumObject xsi:nil="true" p6:noValue="geenWaarde" />
+					</gerelateerde>
+				</isVan>
+				<heeftBetrekkingOp p6:verwerkingssoort="I" p6:entiteittype="ZAKOBJ">
+					<gerelateerde xsi:type="OBJ-kerngegevensKennisgeving">
+						<adres xmlns:q5="http://www.egem.nl/StUF/sector/bg/0310" xsi:type="q5:AOA-zkn-kerngegevensKennisgeving" p6:entiteittype="AOA" p6:sleutelVerzendend="997772" p6:sleutelGegevensbeheer="15455" p6:verwerkingssoort="I">
+							<q5:identificatie xsi:nil="true" p6:noValue="geenWaarde" />
+							<q5:authentiek p6:metagegeven="true">N</q5:authentiek>
+							<q5:wpl.woonplaatsNaam>Amstelveen</q5:wpl.woonplaatsNaam>
+							<q5:gor.openbareRuimteNaam>Laan Nieuwer-Amstel</q5:gor.openbareRuimteNaam>
+							<q5:huisnummer>3</q5:huisnummer>
+							<q5:postcode>1182JR</q5:postcode>
+						</adres>
+					</gerelateerde>
+				</heeftBetrekkingOp>
+				<heeftBetrekkingOp p6:verwerkingssoort="I" p6:entiteittype="ZAKOBJ">
+					<gerelateerde xsi:type="OBJ-kerngegevensKennisgeving">
+						<adres xmlns:q6="http://www.egem.nl/StUF/sector/bg/0310" xsi:type="q6:AOA-zkn-kerngegevensKennisgeving" p6:entiteittype="AOA" p6:sleutelVerzendend="1046995" p6:sleutelGegevensbeheer="" p6:verwerkingssoort="I">
+							<q6:identificatie>0358200027931717</q6:identificatie>
+							<q6:authentiek p6:metagegeven="true">N</q6:authentiek>
+							<q6:wpl.woonplaatsNaam>Aalsmeer</q6:wpl.woonplaatsNaam>
+							<q6:gor.openbareRuimteNaam>Drie Kolommenplein</q6:gor.openbareRuimteNaam>
+							<q6:huisnummer>1</q6:huisnummer>
+							<q6:huisletter>A</q6:huisletter>
+							<q6:postcode>1431LA</q6:postcode>
+						</adres>
+					</gerelateerde>
+				</heeftBetrekkingOp>
+				<heeftAlsGemachtigde xsi:nil="true" p6:noValue="geenWaarde" p6:entiteittype="ZAKBTRGMC" p6:verwerkingssoort="V" />
+				<heeftAlsInitiator p6:entiteittype="ZAKBTRINI" p6:verwerkingssoort="I">
+					<gerelateerde xsi:type="BTR-kerngegevensKennisgeving">
+						<natuurlijkPersoon xmlns:q7="http://www.egem.nl/StUF/sector/bg/0310" xsi:type="q7:NPS-zkn-kerngegevensKennisgeving" p6:entiteittype="NPS" p6:sleutelVerzendend="997780" p6:sleutelGegevensbeheer="613859" p6:verwerkingssoort="I">
+							<q7:inp.bsn>100101011</q7:inp.bsn>
+							<q7:authentiek p6:metagegeven="true">N</q7:authentiek>
+							<q7:geslachtsnaam>Veen</q7:geslachtsnaam>
+							<q7:voorvoegselGeslachtsnaam>van</q7:voorvoegselGeslachtsnaam>
+							<q7:voorletters>A.</q7:voorletters>
+							<q7:voornamen>Anton</q7:voornamen>
+							<q7:geslachtsaanduiding>M</q7:geslachtsaanduiding>
+							<q7:geboortedatum xsi:type="p6:Datum-e">19270101</q7:geboortedatum>
+							<q7:verblijfsadres>
+								<q7:aoa.identificatie xsi:nil="true" p6:noValue="geenWaarde" />
+								<q7:authentiek p6:metagegeven="true">N</q7:authentiek>
+								<q7:wpl.woonplaatsNaam>Amstelveen</q7:wpl.woonplaatsNaam>
+								<q7:gor.openbareRuimteNaam>Laan Nieuwer-Amstel</q7:gor.openbareRuimteNaam>
+								<q7:aoa.postcode>1182JR</q7:aoa.postcode>
+								<q7:aoa.huisnummer>3</q7:aoa.huisnummer>
+							</q7:verblijfsadres>
+						</natuurlijkPersoon>
+					</gerelateerde>
+					<code>AANVRAGER</code>
+					<omschrijving>De aanvrager van de vergunning</omschrijving>
+				</heeftAlsInitiator>
+				<heeftAlsVerantwoordelijke p6:entiteittype="ZAKBTRVRA" p6:verwerkingssoort="I">
+					<gerelateerde xsi:type="BTR-kerngegevensKennisgeving">
+						<medewerker xsi:type="MDW-kerngegevensKennisgeving" p6:entiteittype="MDW" p6:sleutelVerzendend="1129003" p6:verwerkingssoort="I">
+							<identificatie xsi:nil="true" p6:noValue="geenWaarde" />
+							<achternaam>Hees</achternaam>
+							<voorletters>M.</voorletters>
+						</medewerker>
+					</gerelateerde>
+					<omschrijving xsi:nil="true" p6:noValue="geenWaarde" />
+				</heeftAlsVerantwoordelijke>
+				<heeftAlsOverigBetrokkene p6:entiteittype="ZAKBTROVR" p6:verwerkingssoort="T">
+					<gerelateerde xsi:type="BTR-kerngegevensKennisgeving">
+						<natuurlijkPersoon xmlns:q8="http://www.egem.nl/StUF/sector/bg/0310" xsi:type="q8:NPS-zkn-kerngegevensKennisgeving" p6:entiteittype="NPS" p6:sleutelVerzendend="1062784" p6:sleutelGegevensbeheer="279169" p6:verwerkingssoort="T">
+							<q8:geslachtsnaam>Veen</q8:geslachtsnaam>
+							<q8:voorvoegselGeslachtsnaam>in 't</q8:voorvoegselGeslachtsnaam>
+							<q8:voorletters>A.</q8:voorletters>
+							<q8:voornamen>Anton</q8:voornamen>
+							<q8:geslachtsaanduiding>M</q8:geslachtsaanduiding>
+							<q8:geboortedatum xsi:type="p6:Datum-e">19270101</q8:geboortedatum>
+						</natuurlijkPersoon>
+					</gerelateerde>
+					<code>AANNEMER</code>
+					<omschrijving>De aannemer die betrokken is bij de vergunning</omschrijving>
+					<p6:extraElementen>
+						<p6:extraElement naam="RolCode">AANNEMER</p6:extraElement>
+					</p6:extraElementen>
+				</heeftAlsOverigBetrokkene>
+				<heeft p6:entiteittype="ZAKSTT" p6:verwerkingssoort="I">
+					<gerelateerde p6:entiteittype="STT" p6:sleutelVerzendend="" p6:verwerkingssoort="I">
+						<zkt.code>B1210</zkt.code>
+						<zkt.omschrijving>Aanvraag omgevingsvergunning</zkt.omschrijving>
+						<volgnummer xsi:nil="true" p6:noValue="geenWaarde" />
+						<code>MSS00001</code>
+						<omschrijving>Geregistreerd</omschrijving>
+						<ingangsdatumObject xsi:nil="true" p6:noValue="geenWaarde" />
+					</gerelateerde>
+					<isGezetDoor p6:entiteittype="ZAKSTTBTR" p6:verwerkingssoort="T">
+						<gerelateerde>
+							<medewerker p6:entiteittype="MDW" p6:verwerkingssoort="I">
+								<identificatie xsi:nil="true" p6:noValue="geenWaarde" />
+							</medewerker>
+						</gerelateerde>
+						<rolOmschrijving xsi:nil="true" />
+						<rolomschrijvingGeneriek xsi:nil="true" />
+						<p6:tijdstipRegistratie xsi:nil="true" />
+					</isGezetDoor>
+				</heeft>
+			</object>
+		</zakLk01>
+	</s:Body>
+</s:Envelope>

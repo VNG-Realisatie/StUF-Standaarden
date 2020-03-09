@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 lt-ie10 lt-ie9 lt-ie8 lt-ie7 no-js"  lang="nl" dir="ltr"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 lt-ie10 lt-ie9 lt-ie8 no-js"  lang="nl" dir="ltr"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 lt-ie10 lt-ie9 no-js"  lang="nl" dir="ltr"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 lt-ie10 no-js"  lang="nl" dir="ltr"> <![endif]-->
+<!--[if (gt IE 9)]><html class="ie no-js"  lang="nl" dir="ltr"  prefix="content: http://purl.org/rss/1.0/modules/content/
+ dc: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ og: http://ogp.me/ns#
+ rdfs: http://www.w3.org/2000/01/rdf-schema#
+ sioc: http://rdfs.org/sioc/ns#
+ sioct: http://rdfs.org/sioc/types#
+ skos: http://www.w3.org/2004/02/skos/core#
+ xsd: http://www.w3.org/2001/XMLSchema#
+"> <![endif]-->
+<!--[if !IE]><!--> <html class="no-js"  lang="nl" dir="ltr"  prefix="content: http://purl.org/rss/1.0/modules/content/
+ dc: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ og: http://ogp.me/ns#
+ rdfs: http://www.w3.org/2000/01/rdf-schema#
+ sioc: http://rdfs.org/sioc/ns#
+ sioct: http://rdfs.org/sioc/types#
+ skos: http://www.w3.org/2004/02/skos/core#
+ xsd: http://www.w3.org/2001/XMLSchema#
+"> <!--<![endif]-->
+  
+<!-- Mirrored from discussie.kinggemeenten.nl/comment/4342 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 16:03:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+<link rel="shortcut icon" href="../sites/king-community/files/favicon_0_0.ico" />
+<meta name="viewport" content="initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" />
+<meta name="description" content="Op het StUF-BG forum is er een discussie (ONV0343) gaande over zoeken op delen van woorden zoals bedrijfsnaam. Om dit probleem goed op te lossen is een RFC op de StUF-onderlaag nodig.  Het voorstel is om de wildcards van SQL te gebruiken (%, _, etc.) in StUF-vraagberichten." />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="../discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen.html" />
+<link rel="shortlink" href="../discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen.html" />
+    <title>RFC: Introduceren van wildcards in StUF-bevragingen | GEMMA Discussieplatform</title>
+
+    <link rel="stylesheet" href="../sites/king-community/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" />
+<link rel="stylesheet" href="../sites/king-community/files/css/css_wGc8YNdubyXjHrhlqpwaoFeQ4zBA35b3QnXrNqMlVkE.css" />
+<link rel="stylesheet" href="../sites/king-community/files/css/css_vhI5E1JJtg3aywB71DAnVq50mslvqi9YAmh1VTWpcec.css" />
+<link rel="stylesheet" href="../sites/king-community/files/css/css_rzg76u5x4wBqeDyZooOtFpvxReEx4MdfyQRskrLnbcY.css" />
+<link rel="stylesheet" href="../sites/king-community/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css" media="print" />
+<link rel="stylesheet" href="../sites/king-community/files/css/hacks.css" />
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='../sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")</script>
+<script src="../sites/king-community/files/js/js_dWhBODswdXXk1M5Z5nyqNfGljmqwxUwAK9i6D0YSDNs.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"king_community","theme_token":"2bD29lE7f5Zzm_oo2jiqAIikrMIT73nXlzT93NkOYWw","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/advanced_forum\/styles\/naked\/advanced-forum.naked.structure.css":1,"sites\/all\/themes\/king_community\/king_community_forum\/advanced-forum.king_community_forum.style.css":1,"sites\/all\/modules\/contrib\/advanced_forum\/styles\/naked\/advanced-forum.naked.images.css":1,"sites\/all\/themes\/king_community\/king_community_forum\/advanced-forum.king_community_forum.images.css":1,"sites\/all\/themes\/king_community\/stylesheets\/style.css":1,"sites\/all\/themes\/king_community\/stylesheets\/kingbar.css":1,"sites\/all\/themes\/king_community\/stylesheets\/print.css":1},"js":{"0":1,"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"sites\/all\/modules\/custom\/kc_marked_read\/js\/kc_marked_read.js":1,"public:\/\/languages\/nl_2586HP-6TR4-9gsUngNExSS31967RGuja4I2Kxk7k6E.js":1,"modules\/statistics\/statistics.js":1,"sites\/all\/modules\/custom\/kc_forum_topic_operations\/js\/kc_forum_topic_operations.js":1,"sites\/all\/themes\/photon\/js\/html5shiv.min.js":1,"sites\/all\/themes\/photon\/js\/respond.min.js":1,"sites\/all\/themes\/king_community\/javascripts\/king_community.js":1,"sites\/all\/themes\/king_community\/javascripts\/kingbar.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.3\/jquery.min.js":1,"1":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"2":1}},"urlIsAjaxTrusted":{"\/comment\/4342":true},"kcForumTopicOperations":{"requestTime":"2020-03-04T14:17:47+01:00","isModerator":false},"statistics":{"data":{"nid":"7524"},"url":"\/modules\/statistics\/statistics.php"}});</script>
+  </head>
+  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-7524 node-type-forum" >
+    <div id="skip-link">
+      <a href="#main" class="element-invisible element-focusable" role="link">Overslaan en naar de algemene inhoud gaan</a>
+    </div>
+        
+  <!-- ______________________ HEADER _______________________ -->
+
+<header class="kingbar">
+
+  <div class="kingbar-top">
+
+    <div class="kingbar-inner">
+
+      <span class="kingbar-title">
+        <a href="../index.html" title="King Discussie" rel="home">
+        GEMMA Discussieplatform</a></span>
+
+      <nav class="kingbar-widget">
+
+        <ul class="kingbar-inline">
+                                <li class="mobile-hidden js-toggle-kingbar" data-target="#kingbarSites"><a href="#">websites VNG Realisatie</a></li>
+                  </ul>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+  <div id="kingbarSites" class="kingbar-middle">
+
+    <div class="kingbar-inner">
+
+              <nav class="sitemap">
+          <div class="menu-block-wrapper menu-block-king_sites menu-name-menu-king-sites parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="first expanded menu-mlid-685"><span title="" class="nolink">Kolom1</span><ul class="menu"><li class="first leaf menu-mlid-667"><a href="https://www.vngrealisatie.nl/" title="">VNG Realisatie</a></li>
+<li class="leaf menu-mlid-666"><a href="https://www.waarstaatjegemeente.nl/" title="">Waarstaatjegemeente.nl</a></li>
+<li class="last leaf menu-mlid-668"><a href="https://www.da2020.nl/" title="">Digitale Agenda 2020</a></li>
+</ul></li>
+<li class="expanded menu-mlid-686"><span title="" class="nolink">Kolom2</span><ul class="menu"><li class="first leaf menu-mlid-670"><a href="https://www.softwarecatalogus.nl/" title="">GEMMA Softwarecatalogus</a></li>
+<li class="leaf menu-mlid-669"><a href="https://gemmaonline.nl/" title="">GEMMA Architectuur</a></li>
+<li class="last leaf menu-mlid-671"><a href="../index.html" title="">GEMMA Discussies</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-687"><span title="" class="nolink">Kolom3</span><ul class="menu"><li class="first leaf menu-mlid-676"><a href="https://depilotstarter.vng.nl/" title="">De Pilotstarter</a></li>
+<li class="leaf menu-mlid-674"><a href="https://www.ibdgemeenten.nl/" title="">Informatiebeveiligingsdienst (IBD)</a></li>
+<li class="last leaf menu-mlid-675"><a href="https://www.gemeentelijketelecommunicatie.nl/" title="">Gemeentelijke Telecommunicatie (GT)</a></li>
+</ul></li>
+</ul></div>
+        </nav>
+      
+    </div>
+
+  </div>
+
+  <div id="kingbarSearch" class="kingbar-middle">
+
+    <div class="kingbar-inner">
+
+      <input type="text">
+
+    </div>
+
+  </div>
+
+      <div class="kingbar-bottom">
+      <div class="kingbar-inner">
+                  <nav>
+            <div class="menu-block-wrapper menu-block-main_menu menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="kingbar-inline"><li class="first last leaf menu-mlid-624"><span title="" class="separator"><hr></span></li>
+<li class="pull-right"><a href="../user/login.html">Inloggen</a></li>
+</ul></div>
+          </nav>
+              </div>
+    </div>
+  
+</header>
+
+    <h2 class="element-invisible">U bent hier</h2><div class="breadcrumb"><span class="inline odd first"><a href="../index.html">Home</a></span> <span class="delimiter">&rsaquo;</span> <span class="inline even"><a href="../discussie/gemma.html">GEMMA</a></span> <span class="delimiter">&rsaquo;</span> <span class="inline odd"><a href="../discussie/gemma/stuf-301.html">StUF 3.01</a></span> <span class="delimiter">&rsaquo;</span> <span class="inline even last">RFC: Introduceren van wildcards in StUF-bevragingen</span></div><div id="block-search-api-page-kc-search-page" class="block block-search-api-page">
+
+    <h2>Zoeken</h2>
+  
+  <div class="content">
+    <form action="/comment/4342" method="post" id="search-api-page-search-form-kc-search-page" accept-charset="UTF-8"><div><div class="form-item form-type-searchfield form-item-keys-1">
+  <label class="element-invisible" for="edit-keys-1">Geef uw trefwoorden op </label>
+ <input placeholder="Geef uw trefwoorden op" type="search" id="edit-keys-1" name="keys_1" value="" size="15" maxlength="128" class="form-text form-search" />
+</div>
+<input type="hidden" name="id" value="1" />
+<input type="submit" id="edit-submit-1" name="op" value="Zoeken" class="form-submit" /><input type="hidden" name="form_build_id" value="form-DHqx1YBTRIYO_Ijc4naqcrUGwHriZgkZwur1zxFuVZs" />
+<input type="hidden" name="form_id" value="search_api_page_search_form_kc_search_page" />
+</div></form>  </div>
+</div>
+
+<div class="content-wrapper clearfix">
+  
+      <main id="main" class="content-main" role="main">
+        <h1 id="page-title" class="title">
+  RFC: Introduceren van wildcards in StUF-bevragingen</h1><div id="block-block-1" class="block block-block">
+
+  
+  <div class="content">
+    <p>Dit is een statische kopie van het eerdere discussie.kinggemeenten.nl. <br>Nieuwe discussies kunnen in de <a href="https://github.com/VNG-Realisatie/StUF-Standaarden/">GitHub repository 'StUF standaarden'</a> als issue worden opgevoerd.</p>
+<style type="text/css">
+.comment-form, .topic-reply-link, .forum-node-create-links, .comment-add, .comment-reply {display:none !important;}
+</style>  </div>
+</div>
+<div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+  
+<div id="forum-topic-header" class="forum-topic-header clearfix">
+	
+  <div class="topic-post-count">
+  26 reacties / 0 nieuw  </div>
+
+      <div class="topic-reply-link">
+    <a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren    </div>
+  
+  <a id="forum-topic-top"></a>
+</div>
+
+<div id="post-7524" class="forum-post clearfix nl posted-by-56"  about="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" typeof="sioc:Post sioct:BoardPost" role="article">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <span property="dc:date dc:created" content="2015-11-05T09:54:42+01:00" datatype="xsd:dateTime">do, 5-11-2015 - 09.54u</span>
+                </div>  
+    
+        
+    <span class="forum-post-number"><a href="../discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen.html" class="active">#1</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+              <div class="forum-post-title">
+          RFC: Introduceren van wildcards in StUF-bevragingen        </div>
+      
+      <div class="forum-post-content">
+        
+  <div class="field-body">
+    <p>Op het StUF-BG forum is er een discussie (<a href="../discussie/gemma/stuf-bg-310/zoeken-met-stuf-bg-op-delen-van-woorden-zoals-bedrijfsnaam.html" rel="nofollow">ONV0343</a>) gaande over zoeken op delen van woorden zoals bedrijfsnaam. Om dit probleem goed op te lossen is een RFC op de StUF-onderlaag nodig.  Het voorstel is om de wildcards van SQL te gebruiken (%, _, etc.) in StUF-vraagberichten. In de <a href="../discussie/gemma/stuf-301/rfc-verbieden-van-het-gebruik-van-attributes-stuf-berichten.html" rel="nofollow">nieuwe XML-stijl </a>waarin we geen attributes meer gebruiken (alleen elementen) zouden we dat bijvoorbeeld als volgt vorm kunnen geven:</p>
+
+<p>&lt;BG:gelijk&gt;<br />
+  &lt;StUF:entiteit&gt;<br />
+       &lt;StUF:entiteittype&gt;NPS&lt;/StUF:entiteittype&gt;<br />
+  &lt;/StUF:entiteit&gt;<br />
+  &lt;BG:geslachtsnaam&gt;<br />
+       &lt;StUF:waarde&gt;Korver&lt;/StUF:waarde&gt;<br />
+  &lt;/BG:geslachtsnaam&gt;<br />
+  &lt;BG:voorvoegselGeslachtsnaam&gt;<br />
+       &lt;StUF:noValue&gt;geenWaarde&lt;/StUF:noValue&gt;<br />
+  &lt;/BG:voorvoegselGeslachtsnaam&gt;<br />
+  &lt;BG:voornamen&gt;<br />
+       &lt;StUF:waarde&gt;Henri%&lt;/StUF:waarde&gt;<br />
+       <strong>&lt;StUF:wildcards&gt;true&lt;/StUF:wildcards&gt;</strong><br />
+  &lt;/BG:voornamen&gt;<br />
+&lt; /BG:gelijk&gt;</p>
+
+<p>Binnen het element "voornamen" wordt het nieuwe gereserveerde element "wildcards" gebruikt om aan te geven dat het element "waarde" wildcards kan bevatten, in dit geval het % symbool, en dus als een LIKE afgehandeld moet worden in plaats van als een '='. Wellicht is het een idee om de IN-operator van SQL ook te ondersteunen. Misschien moeten we daarvoor ook nog een syntax voor verzinnen.</p>
+
+<p>Ook zouden we een element "caseSensitive" kunnen toevoegen als je specifiek op hoofdletters wilt zoeken, bijvoorbeeld:</p>
+
+<p>  &lt;BG:voornamen&gt;<br />
+       &lt;StUF:waarde&gt;Henri%&lt;/StUF:waarde&gt;<br />
+       &lt;StUF:wildcards&gt;true&lt;/StUF:wildcards&gt;<br />
+       <strong>&lt;StUF:caseSensitive&gt;true&lt;/StUF:caseSensitive&gt;</strong><br />
+  &lt;/BG:voornamen&gt;</p>
+
+<p>De vraag is of het verstandig is om  case sensitivity op deze manier te regelen op berichtniveau (runtime), omdat dit nogal wat implicaties heeft voor de verwerking van de vraag. Misschien is het beter om dit design time te regelen (in de sorteringen van het koppelvlak) en dan heb je het bovengenoemde element "caseSensitive" niet nodig. Het is ook een optie om beide mogelijkheden toe te staan in de StUF-onderlaag en dat de keuze  (design- versus run-time regelen van case sensitivity) wordt gemaakt op koppelvlakniveau.</p>
+
+<p> </p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="post-delete-always first"><a href="../discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="post-edit-always"><a href="../discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen/edit7d82.html?destination=node/7524" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<div id="forum-comments" class="comment-wrapper">
+  <a id="comment-4028"></a>
+
+
+<div id="post-4028" class="forum-post clearfix nl posted-by-28"  about="/comment/4028#comment-4028" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2015-11-06T14:10:16+01:00">vr, 6-11-2015 - 14.10u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4028.html#comment-4028" class="permalink" rel="bookmark">#2</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Robert Melskens"><span class="username" xml:lang="" about="/gebruiker/robert-melskens" typeof="sioc:UserAccount" property="foaf:name" datatype="">Robert Melskens</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Dit RFC is opgevoerd in de onderhoudsverzoeken als RFC0418.<br />
+De lijst met onderhoudsverzoeken vind je op: <br />
+<a href="https://gemmaonline.nl/index.php/StUF-Expertgroep#Documenten">gemmaonline.nl/index.php/StUF-Expertgroep#Documenten</a></p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4028/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4028/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4060"></a>
+
+
+<div id="post-4060" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4060#comment-4060" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2015-12-04T16:20:31+01:00">vr, 4-12-2015 - 16.20u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4060.html#comment-4060" class="permalink" rel="bookmark">#3</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Voortschrijdend inzicht leidt tot een belangrijk probleem in het gebruik van  '%'-tjes als wildcards, namelijk dat deze niet toegestaan hoeven te zijn in het simpleType voor een element. Bijv. het bg0310-schema accepteert geen %-symbolen in het element &lt;postcode&gt;. Dit probleem kan mogelijk getackeld worden door een apart element te definiëren voor het ingeven van zoekcriteria met wildcard-tekens dat String is, dan ben je ook af van het element StUF:wildcards.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4060/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4060/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4061"></a>
+
+
+<div id="post-4061" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4061#comment-4061" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2015-12-04T16:52:09+01:00">vr, 4-12-2015 - 16.52u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4061.html#comment-4061" class="permalink" rel="bookmark">#4</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Is er behoefte aan escape-symbolen om wildcard-tekens (zoals % en _) als normale tekens te interpreteren? Zo ja, hoe gaan we dat doen?  Een mogelijkheid is om de ESCAPE-clause van SQL, bijv.</p>
+
+<p>WHERE omschrijving LIKE '%10-15!% off%' ESCAPE '!';</p>
+
+<p>als uitgangspunt te nemen. We zouden dan het bovenstaande statement als volgt kunnen omzetten naar StUF:</p>
+
+<p>  &lt;ZKN:omschrijving &gt;<br />
+       &lt;StUF:zoekwaarde&gt;%10-15!% off%&lt;/StUF:zoekwaarde&gt;<br />
+       &lt;StUF:escape&gt;!&lt;/StUF:escape&gt;<br />
+  &lt;/ZKN:omschrijving&gt;</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4061/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4061/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4062"></a>
+
+
+<div id="post-4062" class="forum-post clearfix nl posted-by-59"  about="/comment/4062#comment-4062" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2015-12-07T08:33:34+01:00">ma, 7-12-2015 - 08.33u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4062.html#comment-4062" class="permalink" rel="bookmark">#5</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Sid Brouwer"><span class="username" xml:lang="" about="/gebruiker/sid-brouwer" typeof="sioc:UserAccount" property="foaf:name" datatype="">Sid Brouwer</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Persoonlijk zou ik aan het probleem met de toegestane tekens in het simpletype niets doen in de onderlaag.</p>
+
+<p>Als dit al speelt (postcodes staan volgens mij niet op het lijstje voor zoeken met wildcards in RSGB-bevragingen), dan is het ook in het koppelvlak op te lossen door voor de selectiecriteria een (ander) simpletype te gebruiken, waarin het wildcardteken wél is toegestaan.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4062/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4062/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4063"></a>
+
+
+<div id="post-4063" class="forum-post clearfix nl posted-by-59"  about="/comment/4063#comment-4063" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2015-12-07T08:36:53+01:00">ma, 7-12-2015 - 08.36u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4063.html#comment-4063" class="permalink" rel="bookmark">#6</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Sid Brouwer"><span class="username" xml:lang="" about="/gebruiker/sid-brouwer" typeof="sioc:UserAccount" property="foaf:name" datatype="">Sid Brouwer</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Ook van het probleem met het escape-karakter zou ik vooralsnog zeggen: keep it simple. Vooralsnog zou ik dit niet doen en dan maar accepteren dat bij het zoeken op wildcards de wildcardkarakters zelf niet als teken worden beschouwd.  Ze worden in ieder geval toch gevonden (het wildcardkarakter zelf matcht ook met de wildcard) en zonder wildcards zoeken werkt wel weer met die karakters.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4063/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4063/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4138"></a>
+
+
+<div id="post-4138" class="forum-post clearfix nl posted-by-28"  about="/comment/4138#comment-4138" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-01-12T16:20:22+01:00">di, 12-01-2016 - 16.20u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4138.html#comment-4138" class="permalink" rel="bookmark">#7</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Robert Melskens"><span class="username" xml:lang="" about="/gebruiker/robert-melskens" typeof="sioc:UserAccount" property="foaf:name" datatype="">Robert Melskens</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Tijdens de StUF Expertgroep van 18 november 2015 zijn een aantal aspecten van zoeken met wildcards besproken, de vorm (reguliere expressies vs SQL), de implicaties van met wildcards zoeken voor de achterliggende database, de noodzaak voor het zoeken met wildcards, case sensitivity en het moment waarop je keuzes maakt over de vorm van zoeken.<br />
+Uiteindelijk is de voorgestelde oplossing geaccepteerd.</p>
+
+<p>Tijdens de StUF Expertgroep van 16 december 2015 is het probleem aan de orde gesteld dat het niet binnen alle simpleTypes mogelijk is een % teken op te nemen. Verder is nog gediscussieerd over escape karakters en de noodzaak daarvan en nogmaals over het moment waarop de keuzes voor zoeken moeten worden gemaakt.<br />
+Uiteindelijk is aangegeven dat een oplossing voor dit probleem in samenhang met gerelateerde RFC's gepresenteerd moet worden zodat daarover in samenhang gediscussieerd kan worden.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4138/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4138/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4316"></a>
+
+
+<div id="post-4316" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4316#comment-4316" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-04-18T16:18:52+02:00">ma, 18-04-2016 - 16.18u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4316.html#comment-4316" class="permalink" rel="bookmark">#8</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>In de bovenstaande post staat: <em>"Uiteindelijk is de voorgestelde oplossing geaccepteerd." </em>Dit wekt de suggestie dat het RFC is goedgekeurd. Dit is geenszins het geval, het RFC staat nog open voor discussie.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4316/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4316/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4341"></a>
+
+
+<div id="post-4341" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4341#comment-4341" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-10T20:33:11+02:00">di, 10-05-2016 - 20.33u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4341.html#comment-4341" class="permalink" rel="bookmark">#9</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>In de afgelopen bijeenkomst van de StUF Expertgroep is het voorstel gedaan om het attribute "exact" te vervangen door het attribute "wildcard" met de waarden "exact", "begintMet" en "bevat".  De waarde "exact" is equivalent aan een zoekterm zonder %-tekens (wildcard van SQL). De waarde "begintMet" is equivalent aan een zoekterm dat eindigt met een %-teken. De waarde "bevat" is equivalent aan een zoekterm dat begint en eindigt met een %-teken.  De reden om geen %-teken te gebruiken is dat we geen %-teken hoeven toe te voegen aan simpleType's die van zich zelf geen %-teken in hun waardenbereik bevatten. Het is de bedoeling om dit voorstel in de aankomende bijeenkomst van de expertgroep als een hamerstuk goed te keuren.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4341/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4341/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4342"></a>
+
+
+<div id="post-4342" class="forum-post clearfix nl posted-by-668"  about="/comment/4342#comment-4342" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-11T09:13:52+02:00">wo, 11-05-2016 - 09.13u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4342.html#comment-4342" class="permalink" rel="bookmark">#10</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Rens Verhage"><span class="username" xml:lang="" about="/gebruiker/rens-verhage" typeof="sioc:UserAccount" property="foaf:name" datatype="">Rens Verhage</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>In het kader van volledigheid, is het dan niet logisch om ook een 'eindigtMet' op te nemen in de standaard?</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4342/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4342/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4346"></a>
+
+
+<div id="post-4346" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4346#comment-4346" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-11T10:50:05+02:00">wo, 11-05-2016 - 10.50u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4346.html#comment-4346" class="permalink" rel="bookmark">#11</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Wat mij betreft een prima idee om de waarde "eindigtMet" ook mee te nemen in het waardenbereik van het attribute "wildcard". In mijn ogen moet de StUF-onderlaag zo volledig mogelijk zijn. Je kunt altijd nog "restricten" in de koppelvlakken als je bepaalde waarden voor een wildcard niet wilt gebruiken.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4346/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4346/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4357"></a>
+
+
+<div id="post-4357" class="forum-post clearfix nl posted-by-59"  about="/comment/4357#comment-4357" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-13T08:52:56+02:00">vr, 13-05-2016 - 08.52u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4357.html#comment-4357" class="permalink" rel="bookmark">#12</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Sid Brouwer"><span class="username" xml:lang="" about="/gebruiker/sid-brouwer" typeof="sioc:UserAccount" property="foaf:name" datatype="">Sid Brouwer</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Ik heb nog een beetje moeite met de naam van het attribuut in combinatie met de waarden die mogelijk zijn. Met de attribuutnaam <em>wildcard </em>en een waarde <em>begintMet</em>, zou ik als nietsvermoedende lezer denken dat de wildcard aan het begin van het zoekargument zou moeten staan (begint met wildcard). Dit is nu net niet het geval. Exact zou in dat verband ook 'geen' moeten zijn (etc).</p>
+
+<p>Wellicht is een attribuutnaam 'vergelijking' of iets dergelijks toepasselijker, of we zouden (naar mijn mening) de waarden aan moeten passen. ('geen', 'beginEnEind', 'begin' en 'eind' of iets dergelijks).</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4357/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4357/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4361"></a>
+
+
+<div id="post-4361" class="forum-post clearfix nl posted-by-55"  about="/comment/4361#comment-4361" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-13T20:00:14+02:00">vr, 13-05-2016 - 20.00u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4361.html#comment-4361" class="permalink" rel="bookmark">#13</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Maarten van den Broek"><span class="username" xml:lang="" about="/gebruiker/maarten-van-den-broek" typeof="sioc:UserAccount" property="foaf:name" datatype="">Maarten van den...</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Ik kan me helemaal vinden in het voorstel van Sid.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4361/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4361/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4365"></a>
+
+
+<div id="post-4365" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4365#comment-4365" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-17T10:31:54+02:00">di, 17-05-2016 - 10.31u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4365.html#comment-4365" class="permalink" rel="bookmark">#14</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Ook eens met het voorstel van Sid. Dus de attribute-naam "wildcard" behouden, maar dan met logische namen in het waardenbereik:  'geen', 'beginEnEind', 'begin' en 'eind'.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4365/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4365/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4366"></a>
+
+
+<div id="post-4366" class="forum-post clearfix nl posted-by-668"  about="/comment/4366#comment-4366" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-17T11:17:54+02:00">di, 17-05-2016 - 11.17u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4366.html#comment-4366" class="permalink" rel="bookmark">#15</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Rens Verhage"><span class="username" xml:lang="" about="/gebruiker/rens-verhage" typeof="sioc:UserAccount" property="foaf:name" datatype="">Rens Verhage</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Sid heeft een goed punt. Je kunt dit op twee manieren aanvliegen:</p>
+
+<p>1. Vertellen dat je een wildcard gebruikt en aangeven waar die wildcard staat<br /><br />
+"ik zoek met wildcard en die plaats ik aan het begin, aan het eind of aan begin en eind"<br /><br />
+2. Vertellen dat je een string zoekt en aangeven waar je die string zoekt<br /><br />
+"ik ben op zoek naar deze string en ik wil die strings vinden die exact overeenkomen, met deze string beginnen, met deze string eindigen, of waar deze string in voorkomt"</p>
+
+<p>Het voorstel wat er nu staat hinkt op twee gedachten, door aan de ene kant te zeggen ik gebruik een wildcard, maar dit toe te lichten vanuit het perspectief van de zoekstring.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4366/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4366/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4367"></a>
+
+
+<div id="post-4367" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4367#comment-4367" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-17T11:22:07+02:00">di, 17-05-2016 - 11.22u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4367.html#comment-4367" class="permalink" rel="bookmark">#16</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>@Rens, in posts #13 en #14 geven Maarten en ik toch al aan dat we het eens zijn met Sid?</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4367/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4367/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4369"></a>
+
+
+<div id="post-4369" class="forum-post clearfix nl posted-by-668"  about="/comment/4369#comment-4369" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-17T12:21:54+02:00">di, 17-05-2016 - 12.21u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4369.html#comment-4369" class="permalink" rel="bookmark">#17</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Rens Verhage"><span class="username" xml:lang="" about="/gebruiker/rens-verhage" typeof="sioc:UserAccount" property="foaf:name" datatype="">Rens Verhage</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Klopt, ik had beter moeten lezen ;)</p>
+
+<p>Ik ben het er ook mee eens.</p>
+
+<p>Een off-topic vraag. Hebben jullie er ook last van dat het je niet makkelijk wordt gemaakt op een post te reageren? Ik krijg heel vaak de melding "Dit formulier is verouderd. Kopieer alles wat u niet heeft opgeslagen in onderstaand formulier en herlaad daarna deze pagina.".</p>
+
+<p>Het is een heel geklooi om een reactie te plaatsen. Heel vervelend, want dat nodigt niet echt uit om te reageren. Herladen lost het probleem bij mij meestal niet direct op...</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4369/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4369/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4370"></a>
+
+
+<div id="post-4370" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4370#comment-4370" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-17T12:46:48+02:00">di, 17-05-2016 - 12.46u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4370.html#comment-4370" class="permalink" rel="bookmark">#18</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Ja ik ken het probleem, heel vervelend. Herladen is bij mij gelukkig wel een effectieve oplossing. Ik zal het probleem doorgeven aan onze webmaster.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4370/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4370/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4374"></a>
+
+
+<div id="post-4374" class="forum-post clearfix nl posted-by-28"  about="/comment/4374#comment-4374" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-18T15:40:44+02:00">wo, 18-05-2016 - 15.40u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4374.html#comment-4374" class="permalink" rel="bookmark">#19</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Robert Melskens"><span class="username" xml:lang="" about="/gebruiker/robert-melskens" typeof="sioc:UserAccount" property="foaf:name" datatype="">Robert Melskens</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Tijdens de StUF Expertgroep van 18 mei 2016 is besloten het RFC goed te keuren volgens het in reactie #14 geposte voorstel. In een koppelvlak kan dit vervolgens ingeperkt worden.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4374/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4374/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4394"></a>
+
+
+<div id="post-4394" class="forum-post clearfix nl posted-by-28"  about="/comment/4394#comment-4394" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-24T09:15:32+02:00">di, 24-05-2016 - 09.15u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4394.html#comment-4394" class="permalink" rel="bookmark">#20</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Robert Melskens"><span class="username" xml:lang="" about="/gebruiker/robert-melskens" typeof="sioc:UserAccount" property="foaf:name" datatype="">Robert Melskens</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>M.b.t. het probleem dat Rens heeft ervaren ('verouderd formulier) kan ik melden dat onze provider maatregelen heeft genomen waardoor het probleem opgelost zou moeten zijn. Indien dit niet het geval mocht zijn dan horen wij dat natuurlijk graag.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4394/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4394/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4396"></a>
+
+
+<div id="post-4396" class="forum-post clearfix nl posted-by-668"  about="/comment/4396#comment-4396" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-05-25T08:21:48+02:00">wo, 25-05-2016 - 08.21u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4396.html#comment-4396" class="permalink" rel="bookmark">#21</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Rens Verhage"><span class="username" xml:lang="" about="/gebruiker/rens-verhage" typeof="sioc:UserAccount" property="foaf:name" datatype="">Rens Verhage</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Als deze reactie wordt getoond, dan is het de bevestiging dat het werkt :)</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4396/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4396/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4703"></a>
+
+
+<div id="post-4703" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4703#comment-4703" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-10-19T20:17:36+02:00">wo, 19-10-2016 - 20.17u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4703.html#comment-4703" class="permalink" rel="bookmark">#22</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Bijgaand (zie bijlage) de uitwerking van RFC0418. In het bijgevoegde document zijn alleen de wijzingen m.b.t. dit RFC zichtbaar. Deze uitwerking zal in de aankomende EG-meeting als hamerstuk behandeld worden. In geval van bezwaar, graag ruim van te voren melden via dit forum.</p>  </div>
+  <h3 class="field-label">
+    Bijlage  </h3>
+
+  <span class="file"><img class="file-icon" alt="" title="application/pdf" src="../sites/all/themes/king_community/images/icons/bijlage.png" /> <a href="../sites/king-community/files/bijlages/stuf0302-rev2959-2016-10-18-RFC0418.pdf" type="application/pdf; length=919673">stuf0302-rev2959-2016-10-18-RFC0418.pdf</a></span>      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4703/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4703/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4717"></a>
+
+
+<div id="post-4717" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4717#comment-4717" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-10-20T17:58:42+02:00">do, 20-10-2016 - 17.58u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4717.html#comment-4717" class="permalink" rel="bookmark">#23</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Bijgaand (zie bijlage) de Word-versie van de uitwerking van bovenstaande RFC. In Word is het voor sommigen handiger om van de ene revisie naar de andere te springen dan in PDF. Ook zijn er mogelijk nog een paar verbeteringen doorgevoerd. Dus graag deze word-versie gebruiken voor de review.</p>  </div>
+  <h3 class="field-label">
+    Bijlage  </h3>
+
+  <span class="file"><img class="file-icon" alt="" title="application/vnd.openxmlformats-officedocument.wordprocessingml.document" src="../sites/all/themes/king_community/images/icons/bijlage.png" /> <a href="../sites/king-community/files/bijlages/stuf0302-rev2959-2016-10-18-RFC0418.docx" type="application/vnd.openxmlformats-officedocument.wordprocessingml.document; length=329543">stuf0302-rev2959-2016-10-18-RFC0418.docx</a></span>      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4717/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4717/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4753"></a>
+
+
+<div id="post-4753" class="forum-post clearfix nl posted-by-28"  about="/comment/4753#comment-4753" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-10-27T14:00:55+02:00">do, 27-10-2016 - 14.00u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4753.html#comment-4753" class="permalink" rel="bookmark">#24</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Robert Melskens"><span class="username" xml:lang="" about="/gebruiker/robert-melskens" typeof="sioc:UserAccount" property="foaf:name" datatype="">Robert Melskens</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Tijdens de StUF Expertgroep van 19 oktober 2016 is bij het bespreken van RFC0343 verzocht om het aantal elementen waarop wildcards toegepast kunnen worden te beperken. Daarnaast twijfelde Maarten er nog aan of er niet twee verschillende wildcards toegevoegd moesten worden. Een waarbij je overal wildcards mag plaatsen en een waarbij dat beperkt is.<br />
+De StUF Expertgroep was het er mee eens dat je het gebruik van wildcards moet kunnen beperken. Maarten gaat daarvoor aanpassingen aanbrengen op het schema van de onderlaag.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4753/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4753/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4812"></a>
+
+
+<div id="post-4812" class="forum-post clearfix nl posted-by-28"  about="/comment/4812#comment-4812" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-11-17T10:37:09+01:00">do, 17-11-2016 - 10.37u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4812.html#comment-4812" class="permalink" rel="bookmark">#25</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Robert Melskens"><span class="username" xml:lang="" about="/gebruiker/robert-melskens" typeof="sioc:UserAccount" property="foaf:name" datatype="">Robert Melskens</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>Tijdens de StUF Expertgroep van 16 november 2016 is besloten de uitwerking van dit RFC goed te keuren.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4812/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4812/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+<a id="comment-4825"></a>
+
+
+<div id="post-4825" class="forum-post clearfix nl posted-by-56 post-by-starter"  about="/comment/4825#comment-4825" typeof="sioc:Post sioct:Comment">
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      <time datetime="2016-11-23T15:16:00+01:00">wo, 23-11-2016 - 15.16u</time>
+                    
+        
+                  </div>  
+    
+        
+    <span class="forum-post-number"><a href="4825.html#comment-4825" class="permalink" rel="bookmark">#26</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane" data-name="Henri Korver"><span class="username" xml:lang="" about="/gebruiker/henri-korver" typeof="sioc:UserAccount" property="foaf:name" datatype="">Henri Korver</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <span rel="sioc:reply_of" resource="/discussie/gemma/stuf-301/rfc-introduceren-van-wildcards-stuf-bevragingen" class="rdf-meta element-hidden"></span>
+  <div class="field-comment-body">
+    <p>De stuf0302.xsd bevat al de volgende simpleType's voor wildcards:</p>
+
+<p>&lt;simpleType name="Wildcard"&gt;<br />
+     &lt;restriction base="string"&gt;<br />
+          &lt;enumeration value="geen"/&gt;<br />
+          &lt;enumeration value="begin"/&gt;<br />
+          &lt;enumeration value="eind"/&gt;<br />
+          &lt;enumeration value="beginEnEind"/&gt;<br />
+      &lt;/restriction&gt;<br />
+&lt;/simpleType&gt;<br />
+ </p>
+
+<p>&lt;simpleType name="WildcardEind"&gt;<br />
+     &lt;restriction base="StUF:Wildcard"&gt;<br />
+           &lt;enumeration value="geen"/&gt;<br />
+           &lt;enumeration value="eind"/&gt;<br />
+      &lt;/restriction&gt;<br />
+&lt;/simpleType&gt;</p>
+
+<p>Mijn voorstel is om de volgende complexType's toe te voegen aan de stuf0302.xsd:</p>
+
+<p>            &lt;complexType name="WildcardElement"&gt;<br />
+                        &lt;simpleContent&gt;<br />
+                                   &lt;extension base="string"&gt;<br />
+                                               &lt;attribute name="wildcard" type="StUF:Wildcard"/&gt;<br />
+                                               &lt;attribute ref="StUF:noValue"/&gt;<br />
+                                   &lt;/extension&gt;<br />
+                        &lt;/simpleContent&gt;<br />
+            &lt;/complexType&gt;<br />
+ <br />
+            &lt;complexType name="WildcardEindElement"&gt;<br />
+                        &lt;simpleContent&gt;<br />
+                                   &lt;extension base="string"&gt;<br />
+                                               &lt;attribute name="wildcard" type="StUF:WildcardEind"/&gt;<br />
+                                               &lt;attribute ref="StUF:noValue"/&gt;<br />
+                                   &lt;/extension&gt;<br />
+                        &lt;/simpleContent&gt;<br />
+            &lt;/complexType&gt;</p>
+
+<p>Deze types kunnen (her)gebruikt worden in de vraagberichten. Hieronder een voorbeeld van wildcard-elementen in het &lt;gelijk&gt;-element van een vraagbericht voor het entiteittype GEM (GEMEENTE)<em>:</em></p>
+
+<p>&lt;complexType name="GEM-gelijk-MijnKoppelvlak"&gt;<br />
+     &lt;sequence&gt;<br />
+             &lt;element name="gemeenteCode" type="StUF:WildcardEindElement" minOccurs="0"/&gt;<br />
+             &lt;element name="gemeenteNaam" type="StUF:WildcardElement"  minOccurs="0"   <br />
+             ...                                  <br />
+    &lt;/sequence&gt;<br />
+&lt;/complexType&gt;</p>
+
+<p>In bovenstaand complexType van het (fictieve) koppelvlak MijnKoppelvlak is er een beperkte wildcard (geen, eind) opgenomen in het eerste element en een volledige wildcard (geen, begin, eind, beginEnEind) in het tweede element.</p>  </div>
+      </div>
+
+          </div>
+  </div> 
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Bovenaan</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment-delete-always first"><a href="4825/delete.html" class="af-button-small hidden"><span>verwijderen</span></a></li>
+<li class="comment-edit-always"><a href="4825/edit.html" class="af-button-small hidden"><span>bewerken</span></a></li>
+<li class="comment_forbidden last"><span><a href="../user/login41c2.html?destination=node/7524%23comment-form">Login</a> of <a href="../user/register41c2.html?destination=node/7524%23comment-form">registreer</a> om te kunnen reageren</span></li>
+</ul>    </div>
+  </div> </div> 
+        </div>
+  </div>
+</div>
+<div id="block-kc-marked-read-kc-marked-read-mark-as-read" class="block block-kc-marked-read">
+
+    
+  <div class="content">
+    <form action="/comment/4342" method="post" id="kc-marked-read-mark-as-read-form" accept-charset="UTF-8"><div><input type="submit" id="edit-submit" name="op" value="Markeer forum als gelezen" class="form-submit" /><input type="hidden" name="form_build_id" value="form-LzowWVtOKKciMqsEouqCd5yjoVox0Q2HlLsrQc39H0Q" />
+<input type="hidden" name="form_id" value="kc_marked_read_mark_as_read_form" />
+</div></form>  </div>
+</div>
+    </main>
+  </div>
+
+
+
+  <!-- ______________________ FOOTER _______________________ -->
+
+  <footer class="page-footer">
+
+    <div class="l-contained">
+
+      <div class="page-footer-left">
+        <nav class="sitemap">
+            <div id="block-menu-block-king-footer" class="block block-menu-block">
+
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-king_footer menu-name-menu-footer parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="first expanded menu-mlid-659"><span title="" class="nolink">kolom1</span><ul class="menu"><li class="first leaf menu-mlid-657"><a href="https://www.vngrealisatie.nl/onderwerpen" title="">Thema&#039;s</a></li>
+<li class="leaf menu-mlid-678"><a href="https://www.vngrealisatie.nl/over-vngrealisatie" title="">Over VNG Realisatie</a></li>
+<li class="last leaf menu-mlid-679"><a href="https://www.vngrealisatie.nl/werken-bij-vng-realisatie" title="">Vacatures</a></li>
+</ul></li>
+<li class="expanded menu-mlid-660"><span title="" class="nolink">kolom2</span><ul class="menu"><li class="first leaf menu-mlid-662"><a href="https://www.vngrealisatie.nl/agenda" title="">Agenda</a></li>
+<li class="leaf menu-mlid-680"><a href="https://www.vngrealisatie.nl/nieuws" title="">Nieuws</a></li>
+<li class="last leaf menu-mlid-681"><a href="https://www.vngrealisatie.nl/contact" title="">Contact</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-661"><span title="" class="nolink">kolom3</span><ul class="menu"><li class="first leaf menu-mlid-663"><a href="https://twitter.com/VNGRealisatie" title="">Twitter</a></li>
+<li class="leaf menu-mlid-683"><a href="https://nl.linkedin.com/company/vng-realisatie" title="">Linkedin</a></li>
+<li class="last leaf menu-mlid-684"><a href="https://www.youtube.com/channel/UCg0bWcCn9Shnt57-L7hSbow" title="">Youtube</a></li>
+</ul></li>
+</ul></div>
+  </div>
+</div>
+        </nav>
+        <div class="page-footer-copy">
+                                    <small><a href="https://www.vngrealisatie.nl/proclaimer-privacy">Proclaimer en Privacy</a></small>
+                          <small><a href="https://www.vngrealisatie.nl/toegankelijkheid">Toegankelijkheid</a></small>
+                                <small class="copyright">VNG Realisatie &copy; 2020</small>
+        </div>
+
+      </div>
+
+      <div class="page-footer-right">
+
+        <div class="partners">
+          <small></small>        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+    <script>document.createElement( "picture" );</script>
+<script src="../sites/king-community/files/js/js_Cf6GBDYzu65oL1kr4_LndVgcOzwoO6x0Jgck9kh1zx8.js"></script>
+<script src="../sites/king-community/files/js/js_CkURqG1v2mnrTGOKTpikOUidepWhbYFbEsYLAHFin1Q.js"></script>
+<script src="../sites/king-community/files/js/js_kLBXIeA677lZIRuVUTcDM3RIZV-u0yEZ7oF7birZu4I.js"></script>
+  </body>
+
+<!-- Mirrored from discussie.kinggemeenten.nl/comment/4342 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 16:03:05 GMT -->
+</html>

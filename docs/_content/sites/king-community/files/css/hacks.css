@@ -1,0 +1,8 @@
+.menu-block-main_menu ul.kingbar-inline, 
+.block-kc-marked-read, 
+.forum-topic-legend, 
+.forum-post-footer, 
+.topic-reply-locked
+{display:none;}
+.menu-block-main_menu 
+{height:50px;}

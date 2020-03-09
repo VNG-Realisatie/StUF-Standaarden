@@ -1,0 +1,47 @@
+<ZKN:edcLv01 xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.egem.nl/StUF/sector/zkn/0310 zkn0310.msg.xsd">
+         <ZKN:stuurgegevens>
+            <StUF:berichtcode xmlns:StUF="http://www.egem.nl/StUF/StUF0301">Lv01</StUF:berichtcode>
+            <StUF:zender xmlns:StUF="http://www.egem.nl/StUF/StUF0301">
+               <StUF:organisatie/>
+               <StUF:applicatie>iSamenleving</StUF:applicatie>
+            </StUF:zender>
+            <StUF:ontvanger xmlns:StUF="http://www.egem.nl/StUF/StUF0301">
+               <StUF:organisatie/>
+               <StUF:applicatie>CGS</StUF:applicatie>
+            </StUF:ontvanger>
+            <StUF:referentienummer xmlns:StUF="http://www.egem.nl/StUF/StUF0301">JRS_25519285</StUF:referentienummer>
+            <StUF:tijdstipBericht xmlns:StUF="http://www.egem.nl/StUF/StUF0301">2016022415515900</StUF:tijdstipBericht>
+            <StUF:entiteittype xmlns:StUF="http://www.egem.nl/StUF/StUF0301">EDC</StUF:entiteittype>
+         </ZKN:stuurgegevens>
+         <ZKN:parameters>
+            <StUF:sortering xmlns:StUF="http://www.egem.nl/StUF/StUF0301">0</StUF:sortering>
+            <StUF:indicatorVervolgvraag xmlns:StUF="http://www.egem.nl/StUF/StUF0301">false</StUF:indicatorVervolgvraag>
+         </ZKN:parameters>
+         <ZKN:gelijk xmlns:StUF="http://www.egem.nl/StUF/StUF0301" StUF:entiteittype="EDC">
+            <ZKN:identificatie>20160100000001</ZKN:identificatie>
+            <ZKN:isRelevantVoor StUF:entiteittype="EDCZAK">
+               <ZKN:gerelateerde StUF:entiteittype="ZAK">
+                  <ZKN:identificatie>20160000000001</ZKN:identificatie>
+                  <ZKN:isVan StUF:entiteittype="ZAKZKT">
+                     <ZKN:gerelateerde StUF:entiteittype="ZKT">
+                        <ZKN:omschrijving>Opstellen en uitvoeren gezinsplan</ZKN:omschrijving>
+                        <ZKN:code>2001</ZKN:code>
+                     </ZKN:gerelateerde>
+                  </ZKN:isVan>
+               </ZKN:gerelateerde>
+            </ZKN:isRelevantVoor>
+         </ZKN:gelijk>
+         <ZKN:scope>
+            <ZKN:object xmlns:StUF="http://www.egem.nl/StUF/StUF0301" StUF:entiteittype="EDC">
+               <ZKN:identificatie xsi:nil="true" StUF:noValue="geenWaarde"/>
+               <ZKN:dct.omschrijving xsi:nil="true" StUF:noValue="geenWaarde"/>
+               <ZKN:creatiedatum xsi:nil="true" StUF:noValue="geenWaarde"/>
+               <ZKN:titel xsi:nil="true" StUF:noValue="geenWaarde"/>
+               <ZKN:formaat xsi:nil="true" StUF:noValue="geenWaarde"/>
+               <ZKN:taal xsi:nil="true" StUF:noValue="geenWaarde"/>
+               <ZKN:vertrouwelijkAanduiding xsi:nil="true" StUF:noValue="geenWaarde"/>
+               <ZKN:auteur xsi:nil="true" StUF:noValue="geenWaarde"/>
+               <ZKN:inhoud/>
+            </ZKN:object>
+         </ZKN:scope>
+      </ZKN:edcLv01>

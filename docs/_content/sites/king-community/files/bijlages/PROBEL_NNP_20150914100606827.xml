@@ -1,0 +1,52 @@
+<BG:nnpLk01 xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:WOZ="http://www.waarderingskamer.nl/StUF/0312">
+    <BG:stuurgegevens>
+        <StUF:berichtcode>Lk01</StUF:berichtcode>
+        <StUF:zender>
+            <StUF:organisatie>De Marne</StUF:organisatie>
+            <StUF:applicatie>PROBEL</StUF:applicatie>
+            <StUF:administratie>prod</StUF:administratie>
+            </StUF:zender>
+        <StUF:ontvanger>
+            <StUF:organisatie>Procura</StUF:organisatie>
+            <StUF:applicatie>HEFFEN</StUF:applicatie>
+            <StUF:administratie>test</StUF:administratie>
+            </StUF:ontvanger>
+        <StUF:referentienummer>PROBEL_NNP_20150914100606827</StUF:referentienummer>
+        <StUF:tijdstipBericht>20150914100606827</StUF:tijdstipBericht>
+        <StUF:entiteittype>NNP</StUF:entiteittype>
+        </BG:stuurgegevens>
+    <BG:parameters>
+        <StUF:mutatiesoort>T</StUF:mutatiesoort>
+        <StUF:indicatorOvername>V</StUF:indicatorOvername>
+        </BG:parameters>
+    <BG:object StUF:entiteittype="NNP" StUF:verwerkingssoort="T" StUF:sleutelVerzendend="1663000000000002">
+        <BG:inn.nnpId>002955994</BG:inn.nnpId>
+        <BG:authentiek StUF:metagegeven="true">N</BG:authentiek>
+        <BG:statutaireNaam>Stichting Woonzorg Nederland</BG:statutaireNaam>
+        <BG:inn.rechtsvorm xsi:nil="true" StUF:noValue="geenWaarde" />
+        <BG:sub.correspondentieAdres>
+            <BG:wpl.woonplaatsNaam>Amstelveen</BG:wpl.woonplaatsNaam>
+            <BG:postcode>1180AH</BG:postcode>
+            <BG:aoa.identificatie xsi:nil="true" StUF:noValue="geenWaarde" />
+            <BG:gor.openbareRuimteNaam>Postbus</BG:gor.openbareRuimteNaam>
+            <BG:aoa.huisnummer>339</BG:aoa.huisnummer>
+            <BG:aoa.huisletter xsi:nil="true" StUF:noValue="geenWaarde" />
+            <BG:aoa.huisnummertoevoeging xsi:nil="true" StUF:noValue="geenWaarde" />
+            </BG:sub.correspondentieAdres>
+        <BG:bezoekadres>
+            <BG:aoa.identificatie xsi:nil="true" StUF:noValue="geenWaarde" />
+            <BG:authentiek StUF:metagegeven="true">N</BG:authentiek>
+            <BG:wpl.woonplaatsNaam>Amstelveen</BG:wpl.woonplaatsNaam>
+            <BG:gor.openbareRuimteNaam>Prof. E.M. Meijerslaan</BG:gor.openbareRuimteNaam>
+            <BG:aoa.postcode>1183AV</BG:aoa.postcode>
+            <BG:aoa.huisnummer>3</BG:aoa.huisnummer>
+            <BG:aoa.huisletter xsi:nil="true" StUF:noValue="geenWaarde" />
+            <BG:aoa.huisnummertoevoeging xsi:nil="true" StUF:noValue="geenWaarde" />
+            </BG:bezoekadres>
+        <StUF:tijdvakGeldigheid>
+            <StUF:beginGeldigheid>19010101</StUF:beginGeldigheid>
+            <StUF:eindGeldigheid xsi:nil="true" StUF:noValue="geenWaarde" />
+            </StUF:tijdvakGeldigheid>
+        <StUF:tijdstipRegistratie>20080828</StUF:tijdstipRegistratie>
+        </BG:object>
+    </BG:nnpLk01>

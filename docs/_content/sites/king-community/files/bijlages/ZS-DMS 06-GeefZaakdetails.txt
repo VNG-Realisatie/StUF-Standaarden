@@ -1,0 +1,77 @@
+<ZKN:zakLv01 xsi:schemaLocation="http://www.egem.nl/StUF/sector/zkn/0310 zkn0310.msg.xsd" xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ZKN:stuurgegevens>
+    <StUF:berichtcode>Lv01</StUF:berichtcode>
+    <StUF:zender>
+      <StUF:organisatie>0204</StUF:organisatie>
+      <StUF:applicatie>K2V</StUF:applicatie>
+    </StUF:zender>
+    <StUF:ontvanger>
+      <StUF:organisatie>0204</StUF:organisatie>
+      <StUF:applicatie>ZKM</StUF:applicatie>
+    </StUF:ontvanger>
+    <StUF:referentienummer>871543374</StUF:referentienummer>
+    <StUF:tijdstipBericht>2015031615101200</StUF:tijdstipBericht>
+    <StUF:entiteittype>ZAK</StUF:entiteittype>
+  </ZKN:stuurgegevens>
+  <ZKN:parameters>
+    <StUF:sortering>1</StUF:sortering>
+    <StUF:indicatorVervolgvraag>false</StUF:indicatorVervolgvraag>
+  </ZKN:parameters>
+  <ZKN:gelijk StUF:entiteittype="ZAK">
+    <ZKN:identificatie>0204M001538</ZKN:identificatie>
+    <ZKN:heeft StUF:entiteittype="ZAKSTT">
+      <ZKN:indicatieLaatsteStatus>J</ZKN:indicatieLaatsteStatus>
+    </ZKN:heeft>
+  </ZKN:gelijk>
+  <ZKN:scope>
+    <ZKN:object StUF:entiteittype="ZAK">
+      <ZKN:identificatie xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+      <ZKN:omschrijving xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+      <ZKN:toelichting xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+      <ZKN:kenmerk>
+        <ZKN:kenmerk xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+        <ZKN:bron xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+      </ZKN:kenmerk>
+      <ZKN:resultaat>
+        <ZKN:omschrijving xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+        <ZKN:toelichting xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+      </ZKN:resultaat>
+      <ZKN:startdatum xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+      <ZKN:registratiedatum xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+      <ZKN:einddatum xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+      <ZKN:heeftBetrekkingOp StUF:entiteittype="ZAKOBJ">
+        <ZKN:gerelateerde/>
+      </ZKN:heeftBetrekkingOp>
+      <ZKN:heeftAlsGemachtigde StUF:entiteittype="ZAKBTRGMC">
+        <ZKN:gerelateerde/>
+      </ZKN:heeftAlsGemachtigde>
+      <ZKN:heeftAlsInitiator StUF:entiteittype="ZAKBTRINI">
+        <ZKN:gerelateerde/>
+      </ZKN:heeftAlsInitiator>
+      <ZKN:heeftAlsUitvoerende StUF:entiteittype="ZAKBTRUTV">
+        <ZKN:gerelateerde/>
+      </ZKN:heeftAlsUitvoerende>
+      <ZKN:heeftAlsVerantwoordelijke StUF:entiteittype="ZAKBTRVRA">
+        <ZKN:gerelateerde/>
+      </ZKN:heeftAlsVerantwoordelijke>
+      <ZKN:heeft StUF:entiteittype="ZAKSTT">
+        <ZKN:gerelateerde StUF:entiteittype="STT">
+          <ZKN:zkt.code xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+          <ZKN:zkt.omschrijving xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+          <ZKN:volgnummer xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+          <ZKN:code xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+          <ZKN:omschrijving xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+          <ZKN:ingangsdatumObject xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+        </ZKN:gerelateerde>
+        <ZKN:toelichting xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+        <ZKN:datumStatusGezet xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+        <ZKN:indicatieLaatsteStatus xsi:nil="true" StUF:noValue="waardeOnbekend"/>
+        <ZKN:isGezetDoor StUF:entiteittype="ZAKSTTBTR">
+          <ZKN:gerelateerde>
+            <ZKN:medewerker StUF:entiteittype="MDW"/>
+          </ZKN:gerelateerde>
+        </ZKN:isGezetDoor>
+      </ZKN:heeft>
+    </ZKN:object>
+  </ZKN:scope>
+</ZKN:zakLv01>

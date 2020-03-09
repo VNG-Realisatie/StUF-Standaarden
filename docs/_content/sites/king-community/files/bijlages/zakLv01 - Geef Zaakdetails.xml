@@ -1,0 +1,26 @@
+<ZKN:zakLv01 xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <ZKN:stuurgegevens>
+            <StUF:berichtcode>Lv01</StUF:berichtcode>
+            <StUF:zender>
+               <StUF:organisatie/>
+               <StUF:applicatie>iSamenleving</StUF:applicatie>
+            </StUF:zender>
+            <StUF:ontvanger>
+               <StUF:organisatie>9911</StUF:organisatie>
+               <StUF:applicatie>CGS</StUF:applicatie>
+            </StUF:ontvanger>
+            <StUF:referentienummer>JRS_25359948</StUF:referentienummer>
+            <StUF:tijdstipBericht>2016022415492000</StUF:tijdstipBericht>
+            <StUF:entiteittype>ZAK</StUF:entiteittype>
+         </ZKN:stuurgegevens>
+         <ZKN:parameters>
+            <StUF:sortering>0</StUF:sortering>
+            <StUF:indicatorVervolgvraag>false</StUF:indicatorVervolgvraag>
+         </ZKN:parameters>
+         <ZKN:gelijk StUF:entiteittype="ZAK">
+            <ZKN:identificatie>20160000000001</ZKN:identificatie>
+         </ZKN:gelijk>
+         <ZKN:scope>
+            <ZKN:object StUF:entiteittype="ZAK" StUF:scope="alles"/>
+         </ZKN:scope>
+      </ZKN:zakLv01>

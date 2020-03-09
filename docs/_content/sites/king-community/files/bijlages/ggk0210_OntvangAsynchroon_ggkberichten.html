@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:GGK="http://www.stufstandaarden.nl/koppelvlak/ggk0210" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/" name="StUF-GGK0210" targetNamespace="http://www.stufstandaarden.nl/koppelvlak/ggk0210">
+	<import namespace="http://www.egem.nl/StUF/StUF0301" location="../../0301/stuf0301_types.wsdl"/>
+	<documentation>	
+			 29-9-2016: Dit document definieert de webservices voor het de envelopberichten van het gegevensknooppunt.			 
+ 			  Wijzigingen t.b.v. patch 4 (03-01-2017) vergeleken met versie ggk0210_OntvangAsynchroon_ggkberichten.xsd v021000:
+			   - Naam is gewijzigd.
+			   - Namespaceidentifier is gewijzigd.
+			   - Appinfo toegevoegd.
+			   - Versienr gewijzigd.
+			   
+			  208-05-0=23: Functioneel bevestingsbericht Bv01 toegevoegd.
+       <appinfo>
+			<StUF:onderdeel>http://www.stufstandaarden.nl/koppelvlak/ggk0210</StUF:onderdeel>
+			<StUF:patch>5</StUF:patch>
+			<StUF:patchdatum>20180523</StUF:patchdatum>
+			<StUF:schemaversie>2</StUF:schemaversie>
+		</appinfo>
+	</documentation>
+	<types>
+		<xs:schema>
+			<xs:import namespace="http://www.stufstandaarden.nl/koppelvlak/ggk0210" schemaLocation="ggk0210_msg_ggkberichten.xsd"/>
+		</xs:schema>
+	</types>
+	<message name="ggk_Di01">
+		<part name="body" element="GGK:envelopHeenbericht-ggk_Di01"/>
+	</message>
+	<message name="ggk_Du01">
+		<part name="body" element="GGK:envelopRetourbericht-ggk_Du01"/>
+	</message>
+	<portType name="OntvangAsynchroon">
+		<operation name="ggk_Di01">
+			<input message="GGK:ggk_Di01"/>
+			<output message="StUF:Bv03"/>
+			<fault name="fout" message="StUF:Fo03"/>
+		</operation>
+		<operation name="ggk_Du01">
+			<input message="GGK:ggk_Du01"/>
+			<output message="StUF:Bv03"/>
+			<fault name="fout" message="StUF:Fo03"/>
+		</operation>
+		<operation name="Fo01">
+			<input message="StUF:Fo01"/>
+			<output message="StUF:Bv03"/>
+			<fault name="fout" message="StUF:Fo03"/>
+		</operation>
+		<operation name="Bv01">
+			<input message="StUF:Bv01"/>
+			<output message="StUF:Bv03"/>
+			<fault name="fout" message="StUF:Fo03"/>
+		</operation>
+	</portType>
+	<binding name="SOAPOntvangAsynchroon" type="GGK:OntvangAsynchroon">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="ggk_Di01">
+			<soap:operation soapAction="http://www.stufstandaarden.nl/koppelvlak/ggk0210/ggk_Di01"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="fout">
+				<soap:fault name="fout" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ggk_Du01">
+			<soap:operation soapAction="http://www.stufstandaarden.nl/koppelvlak/ggk0210/ggk_Du01"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="fout">
+				<soap:fault name="fout" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="Fo01">
+			<soap:operation soapAction="http://www.egem.nl/StUF/StUF0301/Fo01"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="fout">
+				<soap:fault name="fout" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="Bv01">
+			<soap:operation soapAction="http://www.egem.nl/StUF/StUF0301/Fo01"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="fout">
+				<soap:fault name="fout" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="StUFOntvangAsynchroonGGK0210Service">
+		<port name="OntvangAsynchroon" binding="GGK:SOAPOntvangAsynchroon">
+			<documentation>
+				<wsi:Claim conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soap:address location="http://example.com/CGS/ws1/services/StUFOntvangAsynchroonGGK0210Service"/>
+		</port>
+	</service>
+</definitions>

@@ -1,0 +1,204 @@
+<BG:bagIN_Lk03 xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<BG:stuurgegevens>
+		<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk03</berichtcode>
+		<StUF:zender>
+			<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+			<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">BAG</applicatie>
+			<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			<gebruiker xmlns="http://www.egem.nl/StUF/StUF0301">exectoken-975927</gebruiker>
+		</StUF:zender>
+		<StUF:ontvanger>
+			<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+			<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">WOZ</applicatie>
+			<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+		</StUF:ontvanger>
+		<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">4734749309631138139</referentienummer>
+		<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2014040415531500</tijdstipBericht>
+		<functie xmlns="http://www.egem.nl/StUF/StUF0301">bagIN</functie>
+	</BG:stuurgegevens>
+	<BG:vboLk01>
+		<BG:stuurgegevens>
+			<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk01</berichtcode>
+			<StUF:zender>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">BAG</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:zender>
+			<StUF:ontvanger>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">WOZ</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:ontvanger>
+			<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">5709290590967795933</referentienummer>
+			<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2014040415531500</tijdstipBericht>
+			<entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">TGO</entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+			<mutatiesoort xmlns="http://www.egem.nl/StUF/StUF0301">W</mutatiesoort>
+			<indicatorOvername xmlns="http://www.egem.nl/StUF/StUF0301">V</indicatorOvername>
+		</BG:parameters>
+		<BG:object p7:entiteittype="TGO" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600010000236520</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Verblijfsobject</BG:typering>
+			<BG:adresAanduidingGrp>
+				<BG:num.identificatie>5600200000012532</BG:num.identificatie>
+				<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+				<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+				<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+				<BG:aoa.postcode>1954ML</BG:aoa.postcode>
+				<BG:aoa.huisnummer>22</BG:aoa.huisnummer>
+				<BG:aoa.huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<BG:aoa.huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<BG:ogo.locatieAanduiding p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</BG:adresAanduidingGrp>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BAG-IN</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">20060125000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG">20120604000000</p7:extraElement>
+			</p7:extraElementen>
+			<BG:heeftNevenadressen p7:entiteittype="TGOAOANVN" p7:verwerkingssoort="I">
+				<gerelateerde xmlns="http://www.egem.nl/StUF/sector/bg/0310" p7:entiteittype="AOA" p7:verwerkingssoort="I">
+					<BG:identificatie>5600200000012533</BG:identificatie>
+					<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+					<BG:typering>Nummeraanduiding</BG:typering>
+					<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+					<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+					<BG:huisnummer>24</BG:huisnummer>
+					<BG:huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+					<BG:huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+					<BG:postcode>1954ML</BG:postcode>
+				</gerelateerde>
+				<brondocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BGR-gegevens" p7:metagegeven="true">
+					<BG:identificatie p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+					<BG:datum p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				</brondocument>
+				<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+					<p7:beginGeldigheid p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+					<p7:eindGeldigheid p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				</p7:tijdvakGeldigheid>
+				<p7:tijdstipRegistratie p7:noValue="geenWaarde" xmlns="http://www.egem.nl/StUF/sector/bg/0310" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</BG:heeftNevenadressen>
+		</BG:object>
+		<BG:object p7:entiteittype="TGO" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600010000236520</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Verblijfsobject</BG:typering>
+			<BG:adresAanduidingGrp>
+				<BG:num.identificatie>5600200000012532</BG:num.identificatie>
+				<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+				<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+				<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+				<BG:aoa.postcode>1954ML</BG:aoa.postcode>
+				<BG:aoa.huisnummer>22</BG:aoa.huisnummer>
+				<BG:aoa.huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<BG:aoa.huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<BG:ogo.locatieAanduiding p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</BG:adresAanduidingGrp>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BAG-IN</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">20120604000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</p7:extraElementen>
+			<BG:heeftNevenadressen p7:entiteittype="TGOAOANVN" p7:verwerkingssoort="I">
+				<gerelateerde xmlns="http://www.egem.nl/StUF/sector/bg/0310" p7:entiteittype="AOA" p7:verwerkingssoort="I">
+					<BG:identificatie>5600200000012533</BG:identificatie>
+					<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+					<BG:typering>Nummeraanduiding</BG:typering>
+					<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+					<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+					<BG:huisnummer>24</BG:huisnummer>
+					<BG:huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+					<BG:huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+					<BG:postcode>1954ML</BG:postcode>
+				</gerelateerde>
+				<brondocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BGR-gegevens" p7:metagegeven="true">
+					<BG:identificatie p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+					<BG:datum p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				</brondocument>
+				<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+					<p7:beginGeldigheid p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+					<p7:eindGeldigheid p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				</p7:tijdvakGeldigheid>
+				<p7:tijdstipRegistratie p7:noValue="geenWaarde" xmlns="http://www.egem.nl/StUF/sector/bg/0310" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</BG:heeftNevenadressen>
+		</BG:object>
+	</BG:vboLk01>
+	<BG:aoaLk01>
+		<BG:stuurgegevens>
+			<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk01</berichtcode>
+			<StUF:zender>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">BAG</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:zender>
+			<StUF:ontvanger>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">WOZ</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:ontvanger>
+			<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">5675016812751193601</referentienummer>
+			<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2014040415531500</tijdstipBericht>
+			<entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">AOA</entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+			<mutatiesoort xmlns="http://www.egem.nl/StUF/StUF0301">W</mutatiesoort>
+			<indicatorOvername xmlns="http://www.egem.nl/StUF/StUF0301">V</indicatorOvername>
+		</BG:parameters>
+		<BG:object p7:entiteittype="AOA" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600200000012533</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Nummeraanduiding</BG:typering>
+			<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+			<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+			<BG:huisnummer>24</BG:huisnummer>
+			<BG:huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:postcode>1954ML</BG:postcode>
+			<BG:num.status>Naamgeving uitgegeven</BG:num.status>
+			<BG:inOnderzoek p7:metagegeven="true" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<bronDocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BRA-gegevens" p7:metagegeven="true">
+				<BG:identificatie>55287</BG:identificatie>
+				<BG:datum>20060125</BG:datum>
+			</bronDocument>
+			<BG:einddatumObject p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:beginGeldigheid>20060125000000</p7:beginGeldigheid>
+				<p7:eindGeldigheid>20120604000000</p7:eindGeldigheid>
+			</p7:tijdvakGeldigheid>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BAG-IN</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">20060125000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG">20120604000000</p7:extraElement>
+			</p7:extraElementen>
+		</BG:object>
+		<BG:object p7:entiteittype="AOA" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600200000012533</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Nummeraanduiding</BG:typering>
+			<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+			<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+			<BG:huisnummer>24</BG:huisnummer>
+			<BG:huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:postcode>1954ML</BG:postcode>
+			<BG:num.status>Naamgeving ingetrokken</BG:num.status>
+			<BG:inOnderzoek p7:metagegeven="true" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<bronDocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BRA-gegevens" p7:metagegeven="true">
+				<BG:identificatie>28376</BG:identificatie>
+				<BG:datum>20120604</BG:datum>
+			</bronDocument>
+			<BG:einddatumObject>20120604</BG:einddatumObject>
+			<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:beginGeldigheid>20120604000000</p7:beginGeldigheid>
+				<p7:eindGeldigheid p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</p7:tijdvakGeldigheid>
+			<p7:tijdstipRegistratie xmlns="http://www.egem.nl/StUF/sector/bg/0310">20140405155315</p7:tijdstipRegistratie>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BAG-IN</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">20120604000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</p7:extraElementen>
+		</BG:object>
+	</BG:aoaLk01>
+</BG:bagIN_Lk03>

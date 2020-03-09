@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<ZKN:zakLv01 xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<ZKN:stuurgegevens>
+				<StUF:berichtcode>Lv01</StUF:berichtcode>
+				<StUF:entiteittype>ZAK</StUF:entiteittype>
+			</ZKN:stuurgegevens>
+			<ZKN:parameters>
+				<StUF:sortering>0</StUF:sortering>
+				<StUF:indicatorVervolgvraag>false</StUF:indicatorVervolgvraag>
+			</ZKN:parameters>
+			<ZKN:gelijk StUF:entiteittype="ZAK">
+				<ZKN:einddatum xsi:nil="true" StUF:noValue="geenWaarde" />
+				<ZKN:heeftAlsInitiator StUF:entiteittype="ZAKBTRINI">
+					<ZKN:gerelateerde StUF:entiteittype="BTR">
+						<ZKN:identificatie>11123456789</ZKN:identificatie>
+					</ZKN:gerelateerde>
+				</ZKN:heeftAlsInitiator>
+			</ZKN:gelijk>
+			<ZKN:scope>
+				<ZKN:object StUF:entiteittype="ZAK">
+					<ZKN:identificatie xsi:nil="true" />
+					<ZKN:omschrijving xsi:nil="true" />
+					<ZKN:toelichting xsi:nil="true" />
+					<ZKN:resultaat>
+						<ZKN:omschrijving xsi:nil="true" />
+						<ZKN:toelichting xsi:nil="true" />
+					</ZKN:resultaat>
+					<ZKN:startdatum xsi:nil="true" />
+					<ZKN:registratiedatum xsi:nil="true" />
+					<ZKN:publicatiedatum xsi:nil="true" />
+					<ZKN:einddatumGepland xsi:nil="true" />
+					<ZKN:uiterlijkeEinddatum xsi:nil="true" />
+					<ZKN:einddatum xsi:nil="true" />
+					<ZKN:opschorting>
+						<ZKN:indicatie xsi:nil="true" />
+						<ZKN:reden xsi:nil="true" />
+					</ZKN:opschorting>
+					<ZKN:verlenging>
+						<ZKN:duur xsi:nil="true" />
+						<ZKN:reden xsi:nil="true" />
+					</ZKN:verlenging>
+					<ZKN:betalingsIndicatie xsi:nil="true" />
+					<ZKN:laatsteBetaaldatum xsi:nil="true" />
+					<ZKN:archiefnominatie xsi:nil="true" />
+					<ZKN:datumVernietigingDossier xsi:nil="true" />
+					<ZKN:zaakniveau xsi:nil="true" />
+					<ZKN:deelzakenIndicatie xsi:nil="true" />
+					<ZKN:isVan StUF:entiteittype="ZAKZKT">
+						<ZKN:gerelateerde StUF:entiteittype="ZKT">
+							<ZKN:omschrijving xsi:nil="true" />
+							<ZKN:code xsi:nil="true" />
+						</ZKN:gerelateerde>
+					</ZKN:isVan>
+					<ZKN:heeftBetrekkingOp StUF:entiteittype="ZAKOBJ">
+						<ZKN:gerelateerde />
+						<ZKN:omschrijving />
+					</ZKN:heeftBetrekkingOp>
+					<ZKN:heeftAlsBelanghebbende StUF:entiteittype="ZAKBTRBLH">
+						<ZKN:gerelateerde />
+						<ZKN:omschrijving />
+						<ZKN:code />
+						<ZKN:toelichting />
+					</ZKN:heeftAlsBelanghebbende>
+					<ZKN:heeftAlsGemachtigde StUF:entiteittype="ZAKBTRGMC">
+						<ZKN:gerelateerde />
+						<ZKN:omschrijving />
+						<ZKN:code />
+						<ZKN:toelichting />
+					</ZKN:heeftAlsGemachtigde>
+					<ZKN:heeftAlsInitiator StUF:entiteittype="ZAKBTRINI">
+						<ZKN:gerelateerde />
+						<ZKN:omschrijving />
+						<ZKN:code />
+						<ZKN:toelichting />
+					</ZKN:heeftAlsInitiator>
+					<ZKN:heeftAlsUitvoerende StUF:entiteittype="ZAKBTRUTV">
+						<ZKN:gerelateerde />
+						<ZKN:omschrijving />
+						<ZKN:code />
+						<ZKN:toelichting />
+					</ZKN:heeftAlsUitvoerende>
+					<ZKN:heeftAlsVerantwoordelijke StUF:entiteittype="ZAKBTRVRA">
+						<ZKN:gerelateerde />
+					</ZKN:heeftAlsVerantwoordelijke>
+					<ZKN:heeftAlsOverigBetrokkene StUF:entiteittype="ZAKBTROVR">
+						<ZKN:gerelateerde />
+						<ZKN:omschrijving />
+						<ZKN:code />
+						<ZKN:toelichting />
+					</ZKN:heeftAlsOverigBetrokkene>
+					<ZKN:heeftAlsDeelzaak StUF:entiteittype="ZAKZAKDEL">
+						<ZKN:gerelateerde />
+					</ZKN:heeftAlsDeelzaak>
+					<ZKN:heeftAlsHoofdzaak StUF:entiteittype="ZAKZAKHFD">
+						<ZKN:gerelateerde />
+					</ZKN:heeftAlsHoofdzaak>
+					<ZKN:heeftBetrekkingOpAndere StUF:entiteittype="ZAKZAKBTR">
+						<ZKN:gerelateerde />
+					</ZKN:heeftBetrekkingOpAndere>
+					<ZKN:heeft StUF:entiteittype="ZAKSTT">
+						<ZKN:gerelateerde StUF:entiteittype="STT">
+							<ZKN:code xsi:nil="true" />
+							<ZKN:omschrijving xsi:nil="true" />
+						</ZKN:gerelateerde>
+						<ZKN:datumStatusGezet xsi:nil="true" />
+						<ZKN:indicatieLaatsteStatus xsi:nil="true" />
+						<ZKN:isGezetDoor StUF:entiteittype="ZAKSTTBTR">
+							<ZKN:gerelateerde />
+						</ZKN:isGezetDoor>
+					</ZKN:heeft>
+					<ZKN:heeftRelevant StUF:entiteittype="ZAKEDC">
+						<ZKN:gerelateerde StUF:entiteittype="EDC">
+							<ZKN:identificatie xsi:nil="true" />
+							<ZKN:creatiedatum xsi:nil="true" />
+							<ZKN:ontvangstdatum xsi:nil="true" />
+							<ZKN:titel xsi:nil="true" />
+							<ZKN:beschrijving xsi:nil="true" />
+							<ZKN:formaat xsi:nil="true" />
+							<ZKN:taal xsi:nil="true" />
+							<ZKN:versie xsi:nil="true" />
+							<ZKN:status xsi:nil="true" />
+							<ZKN:verzenddatum xsi:nil="true" />
+							<ZKN:vertrouwelijkAanduiding xsi:nil="true" />
+							<ZKN:inhoud xsi:nil="true" />
+							<ZKN:auteur xsi:nil="true" />
+							<ZKN:link xsi:nil="true" />
+						</ZKN:gerelateerde>
+					</ZKN:heeftRelevant>
+					<ZKN:leidtTot StUF:entiteittype="ZAKBSL">
+						<ZKN:gerelateerde />
+					</ZKN:leidtTot>
+				</ZKN:object>
+			</ZKN:scope>
+		</ZKN:zakLv01>
+	</soapenv:Body>
+</soapenv:Envelope>

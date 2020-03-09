@@ -1,0 +1,78 @@
+<ZKN:zakLk01 xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310"
+    xmlns:StUF="http://www.egem.nl/StUF/StUF0301"
+    xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310"
+    xmlns:gml="http://www.opengis.net/gml"
+    xmlns:ns="http://www.jnc.nl/svs/service/schemas/1.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ZKN:stuurgegevens>
+        <StUF:berichtcode>Lk01</StUF:berichtcode>
+        <StUF:zender>
+            <StUF:organisatie>Frank</StUF:organisatie>
+            <StUF:applicatie>KING-Frank</StUF:applicatie>
+            <StUF:gebruiker/>
+        </StUF:zender>
+        <StUF:ontvanger>
+            <StUF:organisatie>KING</StUF:organisatie>
+            <StUF:applicatie>KING</StUF:applicatie>
+            <StUF:gebruiker/>
+        </StUF:ontvanger>
+        <StUF:referentienummer>1948</StUF:referentienummer>
+        <StUF:tijdstipBericht>2013041109255225</StUF:tijdstipBericht>
+        <StUF:entiteittype>ZAK</StUF:entiteittype>
+    </ZKN:stuurgegevens>
+    <ZKN:parameters>
+        <StUF:mutatiesoort>T</StUF:mutatiesoort>
+        <StUF:indicatorOvername>V</StUF:indicatorOvername>
+    </ZKN:parameters>
+    <ZKN:object StUF:entiteittype="ZAK"
+        StUF:sleutelOntvangend="5700000000000000000000000000000000000001" StUF:verwerkingssoort="T">
+        <ZKN:identificatie>03619490733738</ZKN:identificatie>
+        <ZKN:omschrijving>Client</ZKN:omschrijving>
+        <ZKN:toelichting>toelichting</ZKN:toelichting>
+        <ZKN:kenmerk>
+            <ZKN:kenmerk>13113</ZKN:kenmerk>
+            <ZKN:bron>KING</ZKN:bron>
+        </ZKN:kenmerk>
+        <ZKN:resultaat>
+            <ZKN:omschrijving>Toegekend</ZKN:omschrijving>
+            <ZKN:toelichting>toelichting</ZKN:toelichting>
+        </ZKN:resultaat>
+        <ZKN:startdatum>20130516</ZKN:startdatum>
+        <ZKN:registratiedatum>20130901</ZKN:registratiedatum>
+        <ZKN:publicatiedatum>20120601</ZKN:publicatiedatum>
+        <ZKN:einddatumGepland>20140701</ZKN:einddatumGepland>
+        <ZKN:uiterlijkeEinddatum>20150101</ZKN:uiterlijkeEinddatum>
+        <ZKN:zaakniveau>1</ZKN:zaakniveau>
+        <ZKN:deelzakenIndicatie>N</ZKN:deelzakenIndicatie>
+        <StUF:tijdvakGeldigheid>
+            <StUF:beginGeldigheid>20120331</StUF:beginGeldigheid>
+            <StUF:eindGeldigheid StUF:noValue="geenWaarde" xsi:nil="true"/>
+        </StUF:tijdvakGeldigheid>
+        <StUF:tijdstipRegistratie>20111107110525</StUF:tijdstipRegistratie>
+        <ZKN:isVan StUF:entiteittype="ZAKZKT" StUF:verwerkingssoort="T">
+            <ZKN:gerelateerde StUF:entiteittype="ZKT"
+                StUF:sleutelOntvangend="5700000000000000000000000000000000000001" StUF:verwerkingssoort="T">
+                <ZKN:omschrijving>Client</ZKN:omschrijving>
+                <ZKN:code>B0901</ZKN:code>
+                <ZKN:ingangsdatumObject>20060331</ZKN:ingangsdatumObject>
+            </ZKN:gerelateerde>
+        </ZKN:isVan>
+        <ZKN:heeftAlsInitiator StUF:entiteittype="ZAKBTRINI" StUF:verwerkingssoort="T">
+            <ZKN:gerelateerde>
+                <ZKN:vestiging StUF:entiteittype="VES"
+                    StUF:sleutelOntvangend="123456789012" StUF:verwerkingssoort="I">
+                    <BG:vestigingsNummer xmlns="http://www.egem.nl/StUF/sector/bg/0310">123456789012</BG:vestigingsNummer>
+                </ZKN:vestiging>
+            </ZKN:gerelateerde>
+            <StUF:tijdvakRelatie>
+                <StUF:beginRelatie>20060331</StUF:beginRelatie>
+                <StUF:eindRelatie StUF:noValue="geenWaarde" xsi:nil="true"/>
+            </StUF:tijdvakRelatie>
+            <StUF:tijdvakGeldigheid>
+                <StUF:beginGeldigheid>20180331</StUF:beginGeldigheid>
+                <StUF:eindGeldigheid StUF:noValue="geenWaarde" xsi:nil="true"/>
+            </StUF:tijdvakGeldigheid>
+            <StUF:tijdstipRegistratie>20111107110525</StUF:tijdstipRegistratie>
+        </ZKN:heeftAlsInitiator>
+    </ZKN:object>
+</ZKN:zakLk01>

@@ -1,0 +1,52 @@
+<updateZaakdocument_Di02 xmlns="http://www.egem.nl/StUF/sector/zkn/0310">
+	<stuurgegevens>
+		<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Di02</berichtcode>
+		<zender xmlns="http://www.egem.nl/StUF/StUF0301">
+			<applicatie>SQT</applicatie>
+		</zender>
+		<ontvanger xmlns="http://www.egem.nl/StUF/StUF0301">
+			<applicatie>STANDAARD</applicatie>
+		</ontvanger>
+		<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">20151026112409432</referentienummer>
+		<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">20151026112409432</tijdstipBericht>
+		<functie xmlns="http://www.egem.nl/StUF/StUF0301">updateZaakdocument</functie>
+	</stuurgegevens>
+	<parameters>
+		<checkedOutId>132456789</checkedOutId>
+	</parameters>
+	<edcLk02 a:entiteittype="EDC" a:functie="update" xmlns:a="http://www.egem.nl/StUF/StUF0301">
+		<parameters>
+			<a:mutatiesoort>W</a:mutatiesoort>
+		</parameters>
+		<object a:entiteittype="EDC" a:verwerkingssoort="W">
+			<identificatie>SXO1846814</identificatie>
+			<titel>Testdocument1</titel>
+			<inhoud a:bestandsnaam="bestaatniet.doc"/>
+			<isRelevantVoor xsi:type="EDCZAK-kennisgeving" a:entiteittype="EDCZAK" a:verwerkingssoort="I">
+				<gerelateerde xsi:type="ZAK-kerngegevensKennisgeving" a:entiteittype="ZAK" a:sleutelVerzendend="1844894" a:sleutelGegevensbeheer="00006185" a:verwerkingssoort="T">
+					<identificatie>00006185</identificatie>
+					<isVan a:verwerkingssoort="T" a:entiteittype="ZAKZKT">
+						<gerelateerde xsi:type="ZKT-kerngegevens" a:entiteittype="ZKT" a:sleutelVerzendend="1826009" a:verwerkingssoort="I">
+							<code>ZKT0100</code>
+						</gerelateerde>
+					</isVan>
+				</gerelateerde>
+			</isRelevantVoor>
+		</object>
+		<object a:entiteittype="EDC" a:verwerkingssoort="W">
+			<identificatie>SXO1846814</identificatie>
+			<titel>Testdocument2</titel>
+			<inhoud a:bestandsnaam="bestaatniet.doc"/>
+			<isRelevantVoor xsi:type="EDCZAK-kennisgeving" a:entiteittype="EDCZAK" a:verwerkingssoort="I">
+				<gerelateerde xsi:type="ZAK-kerngegevensKennisgeving" a:entiteittype="ZAK" a:sleutelVerzendend="1844894" a:sleutelGegevensbeheer="00006185" a:verwerkingssoort="T">
+					<identificatie>00006185</identificatie>
+					<isVan a:verwerkingssoort="T" a:entiteittype="ZAKZKT">
+						<gerelateerde xsi:type="ZKT-kerngegevens" a:entiteittype="ZKT" a:sleutelVerzendend="1826009" a:verwerkingssoort="I">
+							<code>ZKT0100</code>
+						</gerelateerde>
+					</isVan>
+				</gerelateerde>
+			</isRelevantVoor>
+		</object>
+	</edcLk02>
+</updateZaakdocument_Di02>

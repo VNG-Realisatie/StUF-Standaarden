@@ -1,0 +1,102 @@
+<zakLk01 xmlns="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:ns="http://www.jnc.nl/svs/service/schemas/1.0">
+    <stuurgegevens>
+        <berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk01</berichtcode>
+        <zender xmlns="http://www.egem.nl/StUF/StUF0301">
+            <organisatie>Andes</organisatie>
+            <applicatie>LTCMV</applicatie>
+            <administratie>onbekend</administratie>
+            <gebruiker>onbekend</gebruiker>
+        </zender>
+        <ontvanger xmlns="http://www.egem.nl/StUF/StUF0301">
+            <organisatie>KING</organisatie>
+            <applicatie>Test platform</applicatie>
+            <administratie>onbekend</administratie>
+            <gebruiker>onbekend</gebruiker>
+        </ontvanger>
+        <referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">2-1</referentienummer>
+        <tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">201710061321</tijdstipBericht>
+        <entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">ZAK</entiteittype>
+    </stuurgegevens>
+    <parameters>
+        <mutatiesoort xmlns="http://www.egem.nl/StUF/StUF0301">T</mutatiesoort>
+        <indicatorOvername xmlns="http://www.egem.nl/StUF/StUF0301">V</indicatorOvername>
+    </parameters>
+    <object d4p1:entiteittype="ZAK"
+        d4p1:sleutelOntvangend="5700000000000000000000000000000000000011"
+        d4p1:sleutelVerzendend="a96860d7-7268-4969-8cf0-bbfe21b7aa6c"
+        d4p1:verwerkingssoort="T" xmlns:d4p1="http://www.egem.nl/StUF/StUF0301">
+        <identificatie>5700000000000000000000000000000000000011</identificatie>
+        <omschrijving>Name</omschrijving>
+        <toelichting>Name
+Description</toelichting>
+        <resultaat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <startdatum>20171007</startdatum>
+        <registratiedatum>20171006</registratiedatum>
+        <publicatiedatum
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <einddatumGepland
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <uiterlijkeEinddatum
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <einddatum>20171008</einddatum>
+        <opschorting
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <verlenging
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <betalingsIndicatie
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <laatsteBetaaldatum
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <archiefnominatie
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <datumVernietigingDossier
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <zaakniveau>1</zaakniveau>
+        <deelzakenIndicatie d4p1:noValue="nietOndersteund">J</deelzakenIndicatie>
+        <d4p1:tijdstipRegistratie
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <d4p1:extraElementen>
+            <d4p1:extraElement naam="Version">2</d4p1:extraElement>
+        </d4p1:extraElementen>
+       <heeftAlsInitiator d4p1:entiteittype="ZAKBTRINI" d4p1:verwerkingssoort="T">
+            <gerelateerde>
+                <vestiging d4p1:entiteittype="VES" d4p1:verwerkingssoort="I">
+                    <vestigingsNummer xmlns="http://www.egem.nl/StUF/sector/bg/0310">123456789012</vestigingsNummer>
+                    <authentiek d4p1:metagegeven="true" xmlns="http://www.egem.nl/StUF/sector/bg/0310">J</authentiek>
+                    <handelsnaam xmlns="http://www.egem.nl/StUF/sector/bg/0310">handelsnaam</handelsnaam>
+                    <datumAanvang
+                        xmlns="http://www.egem.nl/StUF/sector/bg/0310"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <datumEinde
+                        xmlns="http://www.egem.nl/StUF/sector/bg/0310"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <typeringVestiging d4p1:noValue="geenWaarde" xmlns="http://www.egem.nl/StUF/sector/bg/0310">Hoofdvestiging</typeringVestiging>
+                    <sub.telefoonnummer
+                        xmlns="http://www.egem.nl/StUF/sector/bg/0310"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <sub.faxnummer
+                        xmlns="http://www.egem.nl/StUF/sector/bg/0310"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <sub.emailadres
+                        xmlns="http://www.egem.nl/StUF/sector/bg/0310"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <sub.url
+                        xmlns="http://www.egem.nl/StUF/sector/bg/0310"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <sub.rekeningnummerBankGiro
+                        xmlns="http://www.egem.nl/StUF/sector/bg/0310"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <d4p1:tijdstipRegistratie
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </vestiging>
+            </gerelateerde>
+            <code xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <omschrijving
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <toelichting
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <d4p1:tijdstipRegistratie
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        </heeftAlsInitiator>
+    </object>
+</zakLk01>
