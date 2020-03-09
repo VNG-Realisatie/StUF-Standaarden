@@ -1,0 +1,19 @@
+<updateZaakdocument_Di02 xmlns="http://www.egem.nl/StUF/sector/zkn/0310">
+	<stuurgegevens>
+		<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Di02</berichtcode>
+		<zender xmlns="http://www.egem.nl/StUF/StUF0301">
+			<applicatie>SQT</applicatie>
+		</zender>
+		<ontvanger xmlns="http://www.egem.nl/StUF/StUF0301">
+			<applicatie>STANDAARD</applicatie>
+		</ontvanger>
+		<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">20151026112409432</referentienummer>
+		<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">20151026112409432</tijdstipBericht>
+		<functie xmlns="http://www.egem.nl/StUF/StUF0301">updateZaakdocument</functie>
+	</stuurgegevens>
+	<parameters/>
+	<object a:entiteittype="EDC" a:functie="update">
+		<identificatie>ALFRESCO1846814</identificatie>
+		<titel>Testdocument2</titel>
+	</object>
+</updateZaakdocument_Di02>

@@ -1,0 +1,149 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				  xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310"
+                  xmlns:StUF="http://www.egem.nl/StUF/StUF0301"
+                  xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310"
+                  xmlns:xmime="http://www.w3.org/2005/05/xmlmime"
+				  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				  >
+    <soapenv:Header/>
+    <soapenv:Body>
+	    <ZKN:vtoDi01>
+			<ZKN:stuurgegevens>
+				<StUF:berichtcode>Di01</StUF:berichtcode>
+				<StUF:zender>
+					<StUF:organisatie>[OIN nummer BJAA, Jeugdhulpverlener]</StUF:organisatie>
+					<StUF:applicatie>[Applicatie BJAA, Jeugdhulpverlener]</StUF:applicatie>
+					<StUF:administratie>[Administratie BJAA, Jeugdhulpverlener]</StUF:administratie>
+				</StUF:zender>
+				<StUF:ontvanger>
+					<StUF:organisatie>[OIN nummer RvdK11]</StUF:organisatie>
+					<StUF:applicatie>[Applicatie Rvdk11]</StUF:applicatie>
+					<StUF:administratie>[Administratie RvdK]</StUF:administratie>
+				</StUF:ontvanger>
+				<StUF:referentienummer>[referenteinummer]</StUF:referentienummer>
+				<StUF:tijdstipBericht>201404101600</StUF:tijdstipBericht>
+				<StUF:functie>vtoDi01</StUF:functie>
+			</ZKN:stuurgegevens>
+			<ZKN:object StUF:entiteittype="ZAK">
+				<ZKN:identificatie>[identificatie]</ZKN:identificatie>
+				<ZKN:omschrijving>[omschrijving]</ZKN:omschrijving>
+				<ZKN:startdatum>20110427</ZKN:startdatum>
+				<ZKN:registratiedatum>20110427</ZKN:registratiedatum>
+				<StUF:extraElementen>
+					<StUF:extraElement naam="datumIndiening">20120427</StUF:extraElement>
+					<StUF:extraElement naam="urgentie">Hoog</StUF:extraElement>
+					<StUF:extraElement naam="rolJeugdzorgVerzoeker">voogd</StUF:extraElement>
+					<StUF:extraElement naam="gezinsGeschiedenis">tekst
+		</StUF:extraElement>
+				</StUF:extraElementen>
+				<ZKN:isVan StUF:entiteittype="ZAKZKT">
+					<ZKN:gerelateerde StUF:entiteittype="ZKT">
+						<ZKN:omschrijvingGeneriek>Overwegen kinderbeschermingsmaatregel</ZKN:omschrijvingGeneriek>
+					</ZKN:gerelateerde>
+				</ZKN:isVan>
+				<ZKN:heeftBetrekkingOp StUF:entiteittype="ZAKOBJ">
+					<ZKN:gerelateerde>
+						<ZKN:natuurlijkPersoon StUF:entiteittype="NPS">
+							<BG:inp.bsn>364872437</BG:inp.bsn>
+							<BG:geslachtsnaam>Kind_Ächtèrnáãm2</BG:geslachtsnaam>
+							<BG:voornamen>Kind_Vöórnàãm2</BG:voornamen>
+							<BG:geslachtsaanduiding>M</BG:geslachtsaanduiding>
+							<BG:geboortedatum>20060731</BG:geboortedatum>
+							<BG:sub.telefoonnummer>020-3457890</BG:sub.telefoonnummer>
+							<StUF:extraElementen>
+								<StUF:extraElement naam="clientvolgnummer">1</StUF:extraElement>
+								<StUF:extraElement naam="vreemdelingennummer">234554320</StUF:extraElement>
+							</StUF:extraElementen>
+						</ZKN:natuurlijkPersoon>
+					</ZKN:gerelateerde>
+					<ZKN:omschrijving>Client (kind)</ZKN:omschrijving>
+				</ZKN:heeftBetrekkingOp>
+				<ZKN:heeftAlsBelanghebbende StUF:entiteittype="ZAKBTRBLH">
+					<ZKN:gerelateerde StUF:entiteittype="BTR">
+						<ZKN:natuurlijkPersoon>
+							<BG:geslachtsnaam>Achternaam_Gezag</BG:geslachtsnaam>
+							<BG:voornamen>Voornaam_Gezag</BG:voornamen>
+							<BG:sub.telefoonnummer>06-12345678</BG:sub.telefoonnummer>
+						</ZKN:natuurlijkPersoon>
+					</ZKN:gerelateerde>
+					<ZKN:omschrijving>voogd</ZKN:omschrijving>
+					<StUF:extraElementen>
+						<StUF:extraElement naam="clientvolgnummer">1</StUF:extraElement>
+						<StUF:extraElement naam="indicatieGeinformeerd">true</StUF:extraElement>
+					</StUF:extraElementen>
+				</ZKN:heeftAlsBelanghebbende>
+				<ZKN:heeftAlsUitvoerende StUF:entiteittype="ZAKBTRUTV">
+					<ZKN:gerelateerde>
+						<ZKN:nietNatuurlijkPersoon StUF:entiteittype="NNP">
+							<BG:statutaireNaam>BJAA, Jeugdhulpverlener</BG:statutaireNaam>
+						</ZKN:nietNatuurlijkPersoon>
+						<ZKN:medewerker>
+							<ZKN:achternaam>Testgeval</ZKN:achternaam>
+							<ZKN:voorletters>A</ZKN:voorletters>
+							<ZKN:geslachtsaanduiding>V</ZKN:geslachtsaanduiding>
+							<ZKN:telefoonnummer>(075)6555200</ZKN:telefoonnummer>
+						</ZKN:medewerker>
+					</ZKN:gerelateerde>
+				</ZKN:heeftAlsUitvoerende>
+				<ZKN:heeftBetrekkingOpAndere>
+					<ZKN:gerelateerde StUF:entiteittype="ZAK">
+						<ZKN:identificatie StUF:noValue="geenWaarde" xsi:nil="true"/>
+						<ZKN:isVan>
+							<ZKN:gerelateerde StUF:entiteittype="ZKT">
+								<ZKN:omschrijvingGeneriek>Uitvoeren onderzoek kinderbeschermingsmaatregel</ZKN:omschrijvingGeneriek>
+							</ZKN:gerelateerde>
+						</ZKN:isVan>
+					</ZKN:gerelateerde>
+				</ZKN:heeftBetrekkingOpAndere>
+				<ZKN:heeftRelevant StUF:entiteittype="ZAKEDC">
+					<ZKN:gerelateerde StUF:entiteittype="EDC">
+						<ZKN:identificatie>25678</ZKN:identificatie>
+						<ZKN:dct.omschrijving>Verzoek tot onderzoek RvdK</ZKN:dct.omschrijving>
+						<ZKN:dct.omschrijvingGeneriek>Onderzoeksverzoek</ZKN:dct.omschrijvingGeneriek>
+						<ZKN:creatiedatum>20140410</ZKN:creatiedatum>
+						<ZKN:titel>Onderzoeksverzoek inzake zaak: 111111111</ZKN:titel>
+						<ZKN:formaat>PDF</ZKN:formaat>
+						<ZKN:taal>Nederlands</ZKN:taal>
+						<ZKN:status>Gesloten</ZKN:status>
+						<ZKN:vertrouwelijkAanduiding>VERTROUWELIJK</ZKN:vertrouwelijkAanduiding>
+						<ZKN:auteur>M. Elder</ZKN:auteur>
+						<ZKN:link>hamserv01://documenten/verzoeken/111111111-25678.pdf</ZKN:link>
+						<ZKN:inhoud xmime:contentType="PDF" StUF:bestandsnaam="111111111-25678.pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ZKN:inhoud>
+					</ZKN:gerelateerde>
+				</ZKN:heeftRelevant>
+				<ZKN:heeftRelevant StUF:entiteittype="ZAKEDC">
+					<ZKN:gerelateerde StUF:entiteittype="EDC">
+						<ZKN:identificatie>34562</ZKN:identificatie>
+						<ZKN:dct.omschrijving>Gezinsgeschiedenis</ZKN:dct.omschrijving>
+						<ZKN:dct.omschrijvingGeneriek>Beschrijving</ZKN:dct.omschrijvingGeneriek>
+						<ZKN:creatiedatum>20140216</ZKN:creatiedatum>
+						<ZKN:titel>Verslag m.b.t. de gezinsgeschiedenis van de familie Achternaam_Gezag</ZKN:titel>
+						<ZKN:formaat>DOC</ZKN:formaat>
+						<ZKN:taal>Nederlands</ZKN:taal>
+						<ZKN:status>Gesloten</ZKN:status>
+						<ZKN:vertrouwelijkAanduiding>VERTROUWELIJK</ZKN:vertrouwelijkAanduiding>
+						<ZKN:auteur>R. Apporteur</ZKN:auteur>
+						<ZKN:link>hamserv01://documenten/verzoeken/verslagnr-354678.doc</ZKN:link>
+						<ZKN:inhoud xmime:contentType="DOC" StUF:bestandsnaam="verslagnr-354678.doc">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ZKN:inhoud>
+					</ZKN:gerelateerde>
+				</ZKN:heeftRelevant>
+				<ZKN:heeftRelevant StUF:entiteittype="ZAKEDC">
+					<ZKN:gerelateerde StUF:entiteittype="EDC">
+						<ZKN:identificatie>26984</ZKN:identificatie>
+						<ZKN:dct.omschrijving>Hulpverleningsrapportage</ZKN:dct.omschrijving>
+						<ZKN:dct.omschrijvingGeneriek>Rapportage</ZKN:dct.omschrijvingGeneriek>
+						<ZKN:creatiedatum>20140401</ZKN:creatiedatum>
+						<ZKN:titel>Hulpverleningsrapportage inzake zaak: 111111111</ZKN:titel>
+						<ZKN:formaat>JPG</ZKN:formaat>
+						<ZKN:taal>Nederlands</ZKN:taal>
+						<ZKN:status>Gesloten</ZKN:status>
+						<ZKN:vertrouwelijkAanduiding>VERTROUWELIJK</ZKN:vertrouwelijkAanduiding>
+						<ZKN:auteur>H. Ulpverlening</ZKN:auteur>
+						<ZKN:link>hamserv01://documenten/verzoeken/111111111-25678.jpg</ZKN:link>
+						<ZKN:inhoud xmime:contentType="JPG" StUF:bestandsnaam="111111111-25678.jpg">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ZKN:inhoud>
+					</ZKN:gerelateerde>
+				</ZKN:heeftRelevant>
+			</ZKN:object>
+		</ZKN:vtoDi01>
+    </soapenv:Body>
+</soapenv:Envelope>

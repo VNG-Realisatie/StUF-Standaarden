@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <DCr:verstrekDocumentcreatieResultaatDi01 xmlns:DCr="http://www.kinggemeenten.nl/StUF/sector/dcr/0310" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" xmlns:gml="http://www.opengis.net/gml" xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <DCr:stuurgegevens>
+        <StUF:berichtcode>Di01</StUF:berichtcode>
+        <StUF:zender>
+          <StUF:organisatie>KING</StUF:organisatie>
+          <StUF:applicatie>STP</StUF:applicatie>
+          <StUF:gebruiker/>
+        </StUF:zender>
+        <StUF:ontvanger>
+          <StUF:organisatie>ORG</StUF:organisatie>
+          <StUF:applicatie>TTA</StUF:applicatie>
+          <StUF:gebruiker/>
+        </StUF:ontvanger>
+        <StUF:referentienummer>26387888237080617907</StUF:referentienummer>
+        <StUF:tijdstipBericht>20160127201121</StUF:tijdstipBericht>
+        <StUF:functie>DocumentcreatieResultaat</StUF:functie>
+      </DCr:stuurgegevens>
+      <DCr:parameters>
+        <DCr:jobidentificatie>084b9f0d-9bd7-4a35-ae9e-1be7f7524690</DCr:jobidentificatie>
+        <DCr:creatieJobStatus>klaar</DCr:creatieJobStatus>
+      </DCr:parameters>
+      <DCr:document StUF:entiteittype="EDC" StUF:functie="entiteit">
+        <ZKN:inhoud StUF:bestandsnaam="foo.zip" xsi:type="StUF:BinaireInhoud">
+UEsDBBQAAAAIAGtaMS2/u6RnIAAAAIYAAAAKAAAAYml0bWFwLmJtcHPybWOAADMg1gBiVihmZJAAiwcA8RE+CIaB/6iAYj4AUEsBAhQAFAAAAAgAa1oxLb+7pGcgAAAAhgAAAAoAAAAAAAAAAAAgALaBAAAAAGJpdG1hcC5ibXBQSwUGAAAAAAEAAQA4AAAASAAAAAAA
+		</ZKN:inhoud>
+      </DCr:document>
+    </DCr:verstrekDocumentcreatieResultaatDi01>   
+  </soapenv:Body>
+</soapenv:Envelope>
+

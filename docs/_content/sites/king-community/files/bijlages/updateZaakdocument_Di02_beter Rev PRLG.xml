@@ -1,0 +1,38 @@
+<ZKN:updateZaakdocument_Di02 xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ZKN:stuurgegevens>
+        <berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Di02</berichtcode>
+        <zender xmlns="http://www.egem.nl/StUF/StUF0301">
+            <applicatie>SQT</applicatie>
+        </zender>
+        <ontvanger xmlns="http://www.egem.nl/StUF/StUF0301">
+            <applicatie>STANDAARD</applicatie>
+        </ontvanger>
+        <referentienummer xmlns="http://www.egem.nl/StUF/StUF0301"
+            >20151026112409432</referentienummer>
+        <tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301"
+            >20151026112409432</tijdstipBericht>
+        <functie xmlns="http://www.egem.nl/StUF/StUF0301">updateZaakdocument</functie>
+    </ZKN:stuurgegevens>
+    <ZKN:parameters>
+        <ZKN:checkedOutId>132456789</ZKN:checkedOutId>
+    </ZKN:parameters>   
+    <ZKN:object StUF:entiteittype="EDC" StUF:functie="update">
+        <identificatie>ALFRESCO1846814</identificatie>
+        <titel>Testdocument2</titel>
+        <ZKN:isRelevantVoor xsi:type="EDCZAK-kennisgeving" StUF:entiteittype="EDCZAK"
+            StUF:verwerkingssoort="I">
+            <gerelateerde xsi:type="ZAK-kerngegevensKennisgeving" StUF:entiteittype="ZAK"
+                StUF:sleutelVerzendend="1844894" StUF:sleutelGegevensbeheer="00006185"
+                StUF:verwerkingssoort="T">
+                <identificatie>00006185</identificatie>
+                <isVan StUF:verwerkingssoort="T" StUF:entiteittype="ZAKZKT">
+                    <gerelateerde xsi:type="ZKT-kerngegevens" StUF:entiteittype="ZKT"
+                        StUF:sleutelVerzendend="1826009" StUF:verwerkingssoort="I">
+                        <ZKN:omschrijving>Amateuristische kunst subsidie</ZKN:omschrijving>
+                        <ZKN:code>15</ZKN:code>                                                
+                    </gerelateerde>
+                </isVan>
+            </gerelateerde>
+        </ZKN:isRelevantVoor>
+    </ZKN:object>
+</ZKN:updateZaakdocument_Di02>

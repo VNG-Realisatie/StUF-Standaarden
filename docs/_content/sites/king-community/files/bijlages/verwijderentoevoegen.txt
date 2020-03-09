@@ -1,0 +1,17 @@
+Rechtstreeks afkomstig uit het updateZaak bericht:
+
+<heeftAlsGemachtigde p6:entiteittype="ZAKBTRGMC" p6:verwerkingssoort="T">
+	<gerelateerde xsi:type="BTR-kerngegevensKennisgeving">
+		<natuurlijkPersoon xmlns:q8="http://www.egem.nl/StUF/sector/bg/0310" xsi:type="q8:NPS-zkn-kerngegevensKennisgeving" p6:entiteittype="NPS" p6:sleutelVerzendend="1062784" p6:sleutelGegevensbeheer="279169" p6:verwerkingssoort="T">
+			<q8:geslachtsnaam>Veen</q8:geslachtsnaam>
+			<q8:voorvoegselGeslachtsnaam>uit het</q8:voorvoegselGeslachtsnaam>
+			<q8:voorletters>A.B.C.</q8:voorletters>
+			<q8:voornamen>Amstel Bernard Cornelis</q8:voornamen>
+			<q8:geslachtsaanduiding>M</q8:geslachtsaanduiding>
+			<q8:geboortedatum xsi:type="p6:Datum-e">19180101</q8:geboortedatum>
+		</natuurlijkPersoon>
+	</gerelateerde>
+	<code>GEMACHTIGD</code>
+	<omschrijving>De persoon die gemachtigd is bij deze zaak.</omschrijving>
+</heeftAlsGemachtigde>
+<heeftAlsGemachtigde xsi:nil="true" p6:noValue="geenWaarde" p6:entiteittype="ZAKBTRGMC" p6:verwerkingssoort="V" />

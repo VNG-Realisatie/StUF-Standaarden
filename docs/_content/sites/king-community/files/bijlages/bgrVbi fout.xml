@@ -1,0 +1,399 @@
+ <BG:bgrVBI_Lk03 xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	  <BG:stuurgegevens>
+		<StUF:berichtcode>Lk03</StUF:berichtcode>
+		<StUF:zender>
+		  <StUF:organisatie>0000</StUF:organisatie>
+		  <StUF:applicatie>BAG</StUF:applicatie>
+		</StUF:zender>
+		<StUF:ontvanger>
+		  <StUF:organisatie>0000</StUF:organisatie>
+		  <StUF:applicatie>WOZ</StUF:applicatie>
+		  <StUF:administratie>0000</StUF:administratie>
+		</StUF:ontvanger>
+		<StUF:referentienummer>00000Xxx2XXx</StUF:referentienummer>
+		<StUF:tijdstipBericht>2016071109210381</StUF:tijdstipBericht>
+		<StUF:functie>bgrVBI</StUF:functie>
+	  </BG:stuurgegevens>
+	  <BG:pndLk01>
+		<BG:stuurgegevens>
+		  <StUF:berichtcode>Lk01</StUF:berichtcode>
+		  <StUF:zender>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>BAG</StUF:applicatie>
+		  </StUF:zender>
+		  <StUF:ontvanger>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>WOZ</StUF:applicatie>
+			<StUF:administratie>0000</StUF:administratie>
+		  </StUF:ontvanger>
+		  <StUF:referentienummer>00000Xxx2Xxx</StUF:referentienummer>
+		  <StUF:tijdstipBericht>2016071109210382</StUF:tijdstipBericht>
+		  <StUF:entiteittype>PND</StUF:entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+		  <StUF:mutatiesoort>W</StUF:mutatiesoort>
+		  <StUF:indicatorOvername>V</StUF:indicatorOvername>
+		</BG:parameters>
+		<BG:object StUF:entiteittype="PND" StUF:sleutelVerzendend="0000000000000000" StUF:verwerkingssoort="W">
+		  <BG:identificatie>0000000000000000</BG:identificatie>
+		  <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+		  <BG:geometrie>
+			<gml:Polygon srsName="urn:opengis:def:crs:EPSG::28992" xmlns:gml="http://www.opengis.net/gml">
+			  <gml:exterior>
+				<gml:LinearRing>
+				  <gml:pos>100000.000 100000.000</gml:pos>
+				  <gml:pos>100001.000 100001.000</gml:pos>
+				  <gml:pos>100002.000 100002.000</gml:pos>
+				  <gml:pos>100003.000 100003.000</gml:pos>
+				  <gml:pos>100004.000 100004.000</gml:pos>
+				  <gml:pos>100005.000 100005.000</gml:pos>
+				</gml:LinearRing>
+			  </gml:exterior>
+			</gml:Polygon>
+		  </BG:geometrie>
+		  <BG:status>Pand in gebruik</BG:status>
+		  <BG:brondocument StUF:metagegeven="true" groepsnaam="BGR-gegevens">
+			<BG:identificatie>00000000/00.00000</BG:identificatie>
+			<BG:datum>19940317</BG:datum>
+		  </BG:brondocument>
+		  <StUF:tijdvakGeldigheid>
+			<StUF:beginGeldigheid>1994031700000000</StUF:beginGeldigheid>
+			<StUF:eindGeldigheid>2016071100000000</StUF:eindGeldigheid>
+		  </StUF:tijdvakGeldigheid>
+		  <StUF:extraElementen>
+			<StUF:extraElement naam="einddatumTijdvakGeldigheidBAG">2016071100000000</StUF:extraElement>
+			<StUF:extraElement naam="codeGebeurtenis">BGR-VBI</StUF:extraElement>
+			<StUF:extraElement naam="begindatumTijdvakGeldigheidBAG">1994031700000000</StUF:extraElement>
+		  </StUF:extraElementen>
+		</BG:object>
+		<BG:object StUF:entiteittype="PND" StUF:sleutelVerzendend="0000000000000000" StUF:verwerkingssoort="W">
+		  <BG:identificatie>0000000000000000</BG:identificatie>
+		  <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+		  <BG:geometrie>
+			<gml:Polygon srsName="urn:opengis:def:crs:EPSG::28992" xmlns:gml="http://www.opengis.net/gml">
+			  <gml:exterior>
+				<gml:LinearRing>
+				  <gml:pos>100000.000 100000.000</gml:pos>
+				  <gml:pos>100001.000 100001.000</gml:pos>
+				  <gml:pos>100002.000 100002.000</gml:pos>
+				  <gml:pos>100003.000 100003.000</gml:pos>
+				  <gml:pos>100004.000 100004.000</gml:pos>
+				  <gml:pos>100005.000 100005.000</gml:pos>
+				</gml:LinearRing>
+			  </gml:exterior>
+			</gml:Polygon>
+		  </BG:geometrie>
+		  <BG:status>Pand in gebruik (niet ingemeten)</BG:status>
+		  <BG:brondocument StUF:metagegeven="true" groepsnaam="BGR-gegevens">
+			<BG:identificatie>nmnmnmn</BG:identificatie>
+			<BG:datum>20160711</BG:datum>
+		  </BG:brondocument>
+		  <StUF:tijdvakGeldigheid>
+			<StUF:beginGeldigheid>2016071100000000</StUF:beginGeldigheid>
+			<StUF:eindGeldigheid StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  </StUF:tijdvakGeldigheid>
+		  <StUF:tijdstipRegistratie>2016071109205322</StUF:tijdstipRegistratie>
+		  <StUF:extraElementen>
+			<StUF:extraElement StUF:noValue="geenWaarde" naam="einddatumTijdvakGeldigheidBAG" xsi:nil="true"/>
+			<StUF:extraElement naam="codeGebeurtenis">BGR-VBI</StUF:extraElement>
+			<StUF:extraElement naam="begindatumTijdvakGeldigheidBAG">2016071100000000</StUF:extraElement>
+		  </StUF:extraElementen>
+		</BG:object>
+	  </BG:pndLk01>
+	  <BG:aoaLk01-toevoegen>
+		<BG:stuurgegevens>
+		  <StUF:berichtcode>Lk01</StUF:berichtcode>
+		  <StUF:zender>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>BAG</StUF:applicatie>
+		  </StUF:zender>
+		  <StUF:ontvanger>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>WOZ</StUF:applicatie>
+			<StUF:administratie>0000</StUF:administratie>
+		  </StUF:ontvanger>
+		  <StUF:referentienummer>00000Xxx2XXx</StUF:referentienummer>
+		  <StUF:tijdstipBericht>2016071109210382</StUF:tijdstipBericht>
+		  <StUF:entiteittype>AOA</StUF:entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+		  <StUF:mutatiesoort>T</StUF:mutatiesoort>
+		  <StUF:indicatorOvername>V</StUF:indicatorOvername>
+		</BG:parameters>
+		<BG:object StUF:entiteittype="AOA" StUF:sleutelVerzendend="0000000000000000" StUF:verwerkingssoort="T">
+		  <BG:identificatie>0000000000000000</BG:identificatie>
+		  <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+		  <BG:typering>Nummeraanduiding</BG:typering>
+		  <BG:wpl.identificatie>0000</BG:wpl.identificatie>
+		  <BG:wpl.woonplaatsNaam>Test</BG:wpl.woonplaatsNaam>
+		  <BG:wpl.woonplaatsNaamNen>Test</BG:wpl.woonplaatsNaamNen>
+		  <BG:opr.identificatie>0000000000000000</BG:opr.identificatie>
+		  <BG:gor.openbareRuimteNaam>Teststraat</BG:gor.openbareRuimteNaam>
+		  <BG:huisnummer>14</BG:huisnummer>
+		  <BG:huisletter>A</BG:huisletter>
+		  <BG:huisnummertoevoeging StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  <BG:postcode StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  <BG:gor.straatnaam>Teststraat</BG:gor.straatnaam>
+		  <BG:num.indicatieHoofdadres>true</BG:num.indicatieHoofdadres>
+		  <BG:num.status>Naamgeving uitgegeven</BG:num.status>
+		  <BG:num.geconstateerd>N</BG:num.geconstateerd>
+		  <BG:bronDocument StUF:metagegeven="true" groepsnaam="BRA-gegevens">
+			<BG:identificatie>nmnmnmn</BG:identificatie>
+			<BG:datum>20160711</BG:datum>
+		  </BG:bronDocument>
+		  <BG:ingangsdatumObject>20160711</BG:ingangsdatumObject>
+		  <StUF:tijdvakGeldigheid>
+			<StUF:beginGeldigheid>2016071100000000</StUF:beginGeldigheid>
+			<StUF:eindGeldigheid StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  </StUF:tijdvakGeldigheid>
+		  <StUF:tijdstipRegistratie>2016071109205322</StUF:tijdstipRegistratie>
+		  <StUF:extraElementen>
+			<StUF:extraElement StUF:noValue="geenWaarde" naam="einddatumTijdvakGeldigheidBAG" xsi:nil="true"/>
+			<StUF:extraElement naam="codeGebeurtenis">BGR-VBI</StUF:extraElement>
+			<StUF:extraElement naam="begindatumTijdvakGeldigheidBAG">2016071100000000</StUF:extraElement>
+			<StUF:extraElement naam="buurtcode">2</StUF:extraElement>
+			<StUF:extraElement naam="wijkcode">1</StUF:extraElement>
+		  </StUF:extraElementen>
+		</BG:object>
+	  </BG:aoaLk01-toevoegen>
+	  <BG:aoaLk01-toevoegen>
+		<BG:stuurgegevens>
+		  <StUF:berichtcode>Lk01</StUF:berichtcode>
+		  <StUF:zender>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>BAG</StUF:applicatie>
+		  </StUF:zender>
+		  <StUF:ontvanger>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>WOZ</StUF:applicatie>
+			<StUF:administratie>0000</StUF:administratie>
+		  </StUF:ontvanger>
+		  <StUF:referentienummer>00000Xxx2XXx</StUF:referentienummer>
+		  <StUF:tijdstipBericht>2016071109210383</StUF:tijdstipBericht>
+		  <StUF:entiteittype>AOA</StUF:entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+		  <StUF:mutatiesoort>T</StUF:mutatiesoort>
+		  <StUF:indicatorOvername>V</StUF:indicatorOvername>
+		</BG:parameters>
+		<BG:object StUF:entiteittype="AOA" StUF:sleutelVerzendend="0000000000000000" StUF:verwerkingssoort="T">
+		  <BG:identificatie>0000000000000000</BG:identificatie>
+		  <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+		  <BG:typering>Nummeraanduiding</BG:typering>
+		  <BG:wpl.identificatie>0000</BG:wpl.identificatie>
+		  <BG:wpl.woonplaatsNaam>Test</BG:wpl.woonplaatsNaam>
+		  <BG:wpl.woonplaatsNaamNen>Test</BG:wpl.woonplaatsNaamNen>
+		  <BG:opr.identificatie>0000000000000000</BG:opr.identificatie>
+		  <BG:gor.openbareRuimteNaam>Teststraat</BG:gor.openbareRuimteNaam>
+		  <BG:huisnummer>14</BG:huisnummer>
+		  <BG:huisletter>B</BG:huisletter>
+		  <BG:huisnummertoevoeging StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  <BG:postcode StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  <BG:gor.straatnaam>Teststraat</BG:gor.straatnaam>
+		  <BG:num.indicatieHoofdadres>true</BG:num.indicatieHoofdadres>
+		  <BG:num.status>Naamgeving uitgegeven</BG:num.status>
+		  <BG:num.geconstateerd>N</BG:num.geconstateerd>
+		  <BG:bronDocument StUF:metagegeven="true" groepsnaam="BRA-gegevens">
+			<BG:identificatie>nmnmnmn</BG:identificatie>
+			<BG:datum>20160711</BG:datum>
+		  </BG:bronDocument>
+		  <BG:ingangsdatumObject>20160711</BG:ingangsdatumObject>
+		  <StUF:tijdvakGeldigheid>
+			<StUF:beginGeldigheid>2016071100000000</StUF:beginGeldigheid>
+			<StUF:eindGeldigheid StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  </StUF:tijdvakGeldigheid>
+		  <StUF:tijdstipRegistratie>2016071109205322</StUF:tijdstipRegistratie>
+		  <StUF:extraElementen>
+			<StUF:extraElement StUF:noValue="geenWaarde" naam="einddatumTijdvakGeldigheidBAG" xsi:nil="true"/>
+			<StUF:extraElement naam="codeGebeurtenis">BGR-VBI</StUF:extraElement>
+			<StUF:extraElement naam="begindatumTijdvakGeldigheidBAG">2016071100000000</StUF:extraElement>
+			<StUF:extraElement naam="buurtcode">2</StUF:extraElement>
+			<StUF:extraElement naam="wijkcode">1</StUF:extraElement>
+		  </StUF:extraElementen>
+		</BG:object>
+	  </BG:aoaLk01-toevoegen>
+	  <BG:vboLk01-toevoegen>
+		<BG:stuurgegevens>
+		  <StUF:berichtcode>Lk01</StUF:berichtcode>
+		  <StUF:zender>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>BAG</StUF:applicatie>
+		  </StUF:zender>
+		  <StUF:ontvanger>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>WOZ</StUF:applicatie>
+			<StUF:administratie>0000</StUF:administratie>
+		  </StUF:ontvanger>
+		  <StUF:referentienummer>00000Xxx2XX1</StUF:referentienummer>
+		  <StUF:tijdstipBericht>2016071109210383</StUF:tijdstipBericht>
+		  <StUF:entiteittype>TGO</StUF:entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+		  <StUF:mutatiesoort>T</StUF:mutatiesoort>
+		  <StUF:indicatorOvername>V</StUF:indicatorOvername>
+		</BG:parameters>
+		<BG:object StUF:entiteittype="TGO" StUF:sleutelVerzendend="0000000000000000" StUF:verwerkingssoort="T">
+		  <BG:identificatie>0000000000000000</BG:identificatie>
+		  <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+		  <BG:typering>Verblijfsobject</BG:typering>
+		  <BG:adresAanduidingGrp>
+			<BG:num.identificatie>0000000000000000</BG:num.identificatie>
+			<BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Nummeraanduiding</BG:typering>
+			<BG:wpl.identificatie>0000</BG:wpl.identificatie>
+			<BG:wpl.woonplaatsNaam>Test</BG:wpl.woonplaatsNaam>
+			<BG:gor.identificatie>0000000000000000</BG:gor.identificatie>
+			<BG:opr.identificatie>0000000000000000</BG:opr.identificatie>
+			<BG:gor.openbareRuimteNaam>Teststraat</BG:gor.openbareRuimteNaam>
+			<BG:gor.straatnaam>Teststraat</BG:gor.straatnaam>
+			<BG:aoa.postcode StUF:noValue="geenWaarde" xsi:nil="true"/>
+			<BG:aoa.huisnummer>14</BG:aoa.huisnummer>
+			<BG:aoa.huisletter>A</BG:aoa.huisletter>
+			<BG:aoa.huisnummertoevoeging StUF:noValue="geenWaarde" xsi:nil="true"/>
+			<BG:ogo.locatieAanduiding StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  </BG:adresAanduidingGrp>
+		  <BG:brt.buurtCode>2</BG:brt.buurtCode>
+		  <BG:brt.buurtNaam>Test-Oost</BG:brt.buurtNaam>
+		  <BG:gem.gemeenteCode>0000</BG:gem.gemeenteCode>
+		  <BG:gem.gemeenteNaam>Test</BG:gem.gemeenteNaam>
+		  <BG:wyk.wijkCode>1</BG:wyk.wijkCode>
+		  <BG:wyk.wijkNaam>Wijk 10 Test</BG:wyk.wijkNaam>
+		  <BG:gbo.puntGeometrie>
+			<gml:Point srsName="urn:opengis:def:crs:EPSG::28992" xmlns:gml="http://www.opengis.net/gml">
+			  <gml:pos>100000.0000 100000.00000000</gml:pos>
+			</gml:Point>
+		  </BG:gbo.puntGeometrie>
+		  <BG:gebruiksdoel>kantoorfunctie</BG:gebruiksdoel>
+		  <BG:gbo.oppervlakte>125</BG:gbo.oppervlakte>
+		  <BG:gbo.inwinningswijzeOppervlakte>overgenomen uit bouwaanvraag</BG:gbo.inwinningswijzeOppervlakte>
+		  <BG:aot.status>Verblijfsobject gevormd</BG:aot.status>
+		  <BG:aot.geconstateerd>N</BG:aot.geconstateerd>
+		  <BG:brondocument StUF:metagegeven="true" groepsnaam="BGR-gegevens">
+			<BG:identificatie>nmnmnmn</BG:identificatie>
+			<BG:datum>20160711</BG:datum>
+		  </BG:brondocument>
+		  <BG:ingangsdatumObject>20160711</BG:ingangsdatumObject>
+		  <StUF:tijdvakGeldigheid>
+			<StUF:beginGeldigheid>2016071100000000</StUF:beginGeldigheid>
+			<StUF:eindGeldigheid StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  </StUF:tijdvakGeldigheid>
+		  <StUF:tijdstipRegistratie>2016071109205322</StUF:tijdstipRegistratie>
+		  <StUF:extraElementen>
+			<StUF:extraElement StUF:noValue="geenWaarde" naam="einddatumTijdvakGeldigheidBAG" xsi:nil="true"/>
+			<StUF:extraElement naam="codeGebeurtenis">BGR-VBI</StUF:extraElement>
+			<StUF:extraElement naam="begindatumTijdvakGeldigheidBAG">2016071100000000</StUF:extraElement>
+		  </StUF:extraElementen>
+		  <BG:vbo.maaktDeelUitVan StUF:entiteittype="VBOPND" StUF:verwerkingssoort="T">
+			<BG:gerelateerde StUF:entiteittype="PND" StUF:verwerkingssoort="I">
+			  <BG:identificatie>0000000000000000</BG:identificatie>
+			  <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+			</BG:gerelateerde>
+			<BG:brondocument StUF:metagegeven="true" groepsnaam="BGR-gegevens">
+			  <BG:identificatie StUF:noValue="geenWaarde" xsi:nil="true"/>
+			  <BG:datum StUF:noValue="geenWaarde" xsi:nil="true"/>
+			</BG:brondocument>
+			<StUF:tijdvakRelatie>
+			  <StUF:beginRelatie>2016071100000000</StUF:beginRelatie>
+			  <StUF:eindRelatie StUF:noValue="geenWaarde" xsi:nil="true"/>
+			</StUF:tijdvakRelatie>
+			<StUF:tijdvakGeldigheid>
+			  <StUF:beginGeldigheid>2016071100000000</StUF:beginGeldigheid>
+			  <StUF:eindGeldigheid StUF:noValue="geenWaarde" xsi:nil="true"/>
+			</StUF:tijdvakGeldigheid>
+			<StUF:tijdstipRegistratie>2016071109205322</StUF:tijdstipRegistratie>
+		  </BG:vbo.maaktDeelUitVan>
+		</BG:object>
+	  </BG:vboLk01-toevoegen>
+	  <BG:vboLk01-toevoegen>
+		<BG:stuurgegevens>
+		  <StUF:berichtcode>Lk01</StUF:berichtcode>
+		  <StUF:zender>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>BAG</StUF:applicatie>
+		  </StUF:zender>
+		  <StUF:ontvanger>
+			<StUF:organisatie>0000</StUF:organisatie>
+			<StUF:applicatie>WOZ</StUF:applicatie>
+			<StUF:administratie>0000</StUF:administratie>
+		  </StUF:ontvanger>
+		  <StUF:referentienummer>00000Xxx2XX7</StUF:referentienummer>
+		  <StUF:tijdstipBericht>2016071109210384</StUF:tijdstipBericht>
+		  <StUF:entiteittype>TGO</StUF:entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+		  <StUF:mutatiesoort>T</StUF:mutatiesoort>
+		  <StUF:indicatorOvername>V</StUF:indicatorOvername>
+		</BG:parameters>
+		<BG:object StUF:entiteittype="TGO" StUF:sleutelVerzendend="0000000000000000" StUF:verwerkingssoort="T">
+		  <BG:identificatie>0000000000000000</BG:identificatie>
+		  <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+		  <BG:typering>Verblijfsobject</BG:typering>
+		  <BG:adresAanduidingGrp>
+			<BG:num.identificatie>0000000000000000</BG:num.identificatie>
+			<BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Nummeraanduiding</BG:typering>
+			<BG:wpl.identificatie>0000</BG:wpl.identificatie>
+			<BG:wpl.woonplaatsNaam>Test</BG:wpl.woonplaatsNaam>
+			<BG:gor.identificatie>0000000000000000</BG:gor.identificatie>
+			<BG:opr.identificatie>0000000000000000</BG:opr.identificatie>
+			<BG:gor.openbareRuimteNaam>Teststraat</BG:gor.openbareRuimteNaam>
+			<BG:gor.straatnaam>Teststraat</BG:gor.straatnaam>
+			<BG:aoa.postcode StUF:noValue="geenWaarde" xsi:nil="true"/>
+			<BG:aoa.huisnummer>14</BG:aoa.huisnummer>
+			<BG:aoa.huisletter>B</BG:aoa.huisletter>
+			<BG:aoa.huisnummertoevoeging StUF:noValue="geenWaarde" xsi:nil="true"/>
+			<BG:ogo.locatieAanduiding StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  </BG:adresAanduidingGrp>
+		  <BG:brt.buurtCode>2</BG:brt.buurtCode>
+		  <BG:brt.buurtNaam>Test-Oost</BG:brt.buurtNaam>
+		  <BG:gem.gemeenteCode>0000</BG:gem.gemeenteCode>
+		  <BG:gem.gemeenteNaam>Test</BG:gem.gemeenteNaam>
+		  <BG:wyk.wijkCode>1</BG:wyk.wijkCode>
+		  <BG:wyk.wijkNaam>Wijk 10 Test</BG:wyk.wijkNaam>
+		  <BG:gbo.puntGeometrie>
+			<gml:Point srsName="urn:opengis:def:crs:EPSG::28992" xmlns:gml="http://www.opengis.net/gml">
+			  <gml:pos>100000.0000 100000.00000000</gml:pos>
+			</gml:Point>
+		  </BG:gbo.puntGeometrie>
+		  <BG:gebruiksdoel>kantoorfunctie</BG:gebruiksdoel>
+		  <BG:gbo.oppervlakte>125</BG:gbo.oppervlakte>
+		  <BG:gbo.inwinningswijzeOppervlakte>overgenomen uit bouwaanvraag</BG:gbo.inwinningswijzeOppervlakte>
+		  <BG:aot.status>Verblijfsobject gevormd</BG:aot.status>
+		  <BG:aot.geconstateerd>N</BG:aot.geconstateerd>
+		  <BG:brondocument StUF:metagegeven="true" groepsnaam="BGR-gegevens">
+			<BG:identificatie>nmnmnmn</BG:identificatie>
+			<BG:datum>20160711</BG:datum>
+		  </BG:brondocument>
+		  <BG:ingangsdatumObject>20160711</BG:ingangsdatumObject>
+		  <StUF:tijdvakGeldigheid>
+			<StUF:beginGeldigheid>2016071100000000</StUF:beginGeldigheid>
+			<StUF:eindGeldigheid StUF:noValue="geenWaarde" xsi:nil="true"/>
+		  </StUF:tijdvakGeldigheid>
+		  <StUF:tijdstipRegistratie>2016071109205322</StUF:tijdstipRegistratie>
+		  <StUF:extraElementen>
+			<StUF:extraElement StUF:noValue="geenWaarde" naam="einddatumTijdvakGeldigheidBAG" xsi:nil="true"/>
+			<StUF:extraElement naam="codeGebeurtenis">BGR-VBI</StUF:extraElement>
+			<StUF:extraElement naam="begindatumTijdvakGeldigheidBAG">2016071100000000</StUF:extraElement>
+		  </StUF:extraElementen>
+		  <BG:vbo.maaktDeelUitVan StUF:entiteittype="VBOPND" StUF:verwerkingssoort="T">
+			<BG:gerelateerde StUF:entiteittype="PND" StUF:verwerkingssoort="I">
+			  <BG:identificatie>0000000000000000</BG:identificatie>
+			  <BG:authentiek StUF:metagegeven="true">J</BG:authentiek>
+			</BG:gerelateerde>
+			<BG:brondocument StUF:metagegeven="true" groepsnaam="BGR-gegevens">
+			  <BG:identificatie StUF:noValue="geenWaarde" xsi:nil="true"/>
+			  <BG:datum StUF:noValue="geenWaarde" xsi:nil="true"/>
+			</BG:brondocument>
+			<StUF:tijdvakRelatie>
+			  <StUF:beginRelatie>2016071100000000</StUF:beginRelatie>
+			  <StUF:eindRelatie StUF:noValue="geenWaarde" xsi:nil="true"/>
+			</StUF:tijdvakRelatie>
+			<StUF:tijdvakGeldigheid>
+			  <StUF:beginGeldigheid>2016071100000000</StUF:beginGeldigheid>
+			  <StUF:eindGeldigheid StUF:noValue="geenWaarde" xsi:nil="true"/>
+			</StUF:tijdvakGeldigheid>
+			<StUF:tijdstipRegistratie>2016071109205322</StUF:tijdstipRegistratie>
+		  </BG:vbo.maaktDeelUitVan>
+		</BG:object>
+	  </BG:vboLk01-toevoegen>
+	</BG:bgrVBI_Lk03>

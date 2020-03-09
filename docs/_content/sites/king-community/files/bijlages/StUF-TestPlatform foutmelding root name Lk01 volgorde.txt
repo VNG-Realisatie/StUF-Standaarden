@@ -1,0 +1,175 @@
+Per gebeurtenis worden de berichten in een vaste volgorde geplaatst in het samengestelde bericht. 
+  Primair worden de berichten gesorteerd op tijdstipRegistratie; 
+
+  Bij gelijk tijdstipRegistratie wordt gesorteerd op: 
+  - tijdvakGeldigheid/beginGeldigheid; 
+
+  Bij gelijk tijdstipRegistratie en gelijk tijdvakGeldigheid/beginGeldigheid wordt gesorteerd op berichtsoort in de volgorde: 
+  - gemLk01 
+  - wplLk01 
+  - oprLk01 
+  - pndLk01 
+  - aoaLk01 
+  - vboLk01 
+  - ligstaLk01 
+  - ogoLk01 
+  - otrLk01 
+
+  Bij gelijk tijdstipRegistratie, gelijk tijdvakGeldigheid/beginGeldigheid en gelijk berichtsoort staan de berichten in de volgorde: 
+  - F (correcties) 
+  - T (toevoeging) 
+  - W (beëindiging) 
+  - W (overige wijzigingen). 
+  
+  
+----------------------------------------------------------
+
+
+import nl.jnc.stv.common.ScriptStatus
+import nl.jnc.stv.util.XPathProcessor
+
+def returnVal = new ScriptStatus();
+returnVal.succeeded = true;
+def proc = new XPathProcessor()
+def splitXpathExpression = '//*[bg:stuurgegevens/stuf:berichtcode = \'Lk01\']'
+def rootNamePattern = ['gemLk01', 'wplLk01', 'oprLk01', 'pndLk01', 'aoaLk01', 'vboLk01', 'ligstaLk01', 'ogoLk01', 'otrLk01']
+def mutatiePattern = ['F', 'T', 'V', 'W']
+nodes = proc.getXPathNodeList(request, splitXpathExpression);
+if (nodes.size() > 1) {
+    def timeRegistrations = [];
+    def startActions = []
+    def mutatieSorts = []
+    def compArray = []
+    for (def i = 0; i < nodes.size(); i++) {
+        def objects = proc.getXPathNodeList(nodes.get(i), './/bg:object')
+        def object = null
+        def stringRegistration = null
+        def stringStartAction = null
+        if (objects != null && objects.size() > 0) {
+            object = objects.get(objects.size() - 1);
+        }
+        if (object != null) {
+            stringRegistration = proc.getXPathValue(object, 'stuf:tijdstipRegistratie')
+            stringStartAction = proc.getXPathValue(object, 'stuf:tijdvakGeldigheid/StUF:beginGeldigheid')
+        }
+
+        def stringMutatieSort = proc.getXPathValue(nodes.get(i), 'BG:parameters/StUF:mutatiesoort')
+        def dateRegistration = null;
+        def dateStartAction = null;
+        if (stringRegistration != null && stringRegistration != '') {
+            if (stringRegistration.length() >= 17) {
+                dateRegistration = Date.parse('yyyyMMddhhmmssSSS', stringRegistration[0..16])
+            } else if (stringRegistration.length() >= 14) {
+                dateRegistration = Date.parse('yyyyMMddhhmmss', stringRegistration[0..13])
+            } else if (stringRegistration.length() >= 8) {
+                dateRegistration = Date.parse('yyyyMMdd', stringRegistration[0..7])
+            }
+        }
+        if (stringStartAction != null && stringStartAction != '') {
+            if (stringStartAction.length() >= 17) {
+                dateStartAction = Date.parse('yyyyMMddhhmmssSSS', stringStartAction[0..16]);
+            } else if (stringStartAction.length() >= 14) {
+                dateStartAction = Date.parse('yyyyMMddhhmmss', stringStartAction[0..13]);
+            } else if (stringStartAction.length() >= 8) {
+                dateStartAction = Date.parse('yyyyMMdd', stringStartAction[0..7]);
+
+            }
+        }
+        if (dateRegistration != null) {
+            timeRegistrations.add(dateRegistration);
+        }
+        if (dateStartAction != null) {
+            startActions.add(dateStartAction);
+        }
+        if (stringMutatieSort != null && stringMutatieSort != '') {
+            mutatieSorts.add(stringMutatieSort);
+        }
+        compArray.add(0)
+    }
+    compArray.remove(0);
+    if (timeRegistrations.size() == nodes.size()) {
+        for (def i = 0; i < timeRegistrations.size() - 1; i++) {
+            compArray.putAt(i, timeRegistrations.get(i + 1).compareTo(timeRegistrations.get(i)));
+        }
+        if (compArray.contains(-1)) {
+            msg = "Lk01 messages have the wrong order in Lk03 message. Lk01 compared by BG:object/StUF:tijdstipRegistratie. The following Lk01 messages are ordered incorrectly:"
+            writeErrorMessage(compArray, returnVal, msg)
+            return returnVal
+        }
+    }
+    if (compArray.contains(0) || (timeRegistrations.size() != nodes.size())) {
+        if (startActions.size() == nodes.size()) {
+            for (def i = 0; i < startActions.size() - 1; i++) {
+                if (compArray.get(i) == 0) {
+                    compArray.putAt(i, startActions.get(i + 1).compareTo(startActions.get(i)));
+                }
+            }
+            if (compArray.contains(-1)) {
+                msg = "Lk01 messages have the wrong order in Lk03 message. Lk01 compared by BG:object/StUF:tijdvakGeldigheid/StUF:beginGeldigheid. The following Lk01 messages are ordered incorrectly:"
+                writeErrorMessage(compArray, returnVal, msg)
+                return returnVal
+            }
+        }
+        if (compArray.contains(0) || startActions.size() != nodes.size()) {
+            for (def i = 0; i < nodes.size() - 1; i++) {
+                if (compArray.get(i) == 0) {
+                    compArray.putAt(i, compareByPattern(nodes.get(i).getLocalName(), nodes.get(i + 1).getLocalName(), rootNamePattern));
+                }
+            }
+            if (compArray.contains(-1)) {
+                msg = "Lk01 messages have the wrong order in Lk03 message. Lk01 compared by root name. Incorrectly ordered Lk01 messages are"
+                writeErrorMessage(compArray, returnVal, msg)
+                return returnVal
+            }
+            if (compArray.contains(0) && !skipCheckingMutatiesoordOrdering(request)) {
+                if (mutatieSorts.size() == nodes.size()) {
+                    for (def i = 0; i < mutatieSorts.size() - 1; i++) {
+                        if (compArray.get(i) == 0) {
+                            compArray.putAt(i, compareByPattern(mutatieSorts.get(i), mutatieSorts.get(i + 1), mutatiePattern));
+                        }
+                    }
+                    if (compArray.contains(-1)) {
+                        msg = "Lk01 messages have the wrong order in Lk03 message. Lk01 compared by BG:parameters/StUF:mutatiesoort. The following Lk01 messages are ordered incorrectly:"
+                        writeErrorMessage(compArray, returnVal, msg)
+                        return returnVal
+                    }
+                }
+            }
+        }
+    }
+}
+return returnVal;
+
+
+static String writeErrorMessage(compArray, returnVal, errorMessage) {
+    returnVal.succeeded = false;
+    returnVal.errorMessage = errorMessage
+    def set = [] as Set
+    compArray.findIndexValues { it == -1 }.each {
+        set.add(it + 1)
+        set.add(it + 2)
+    }
+    set.sort().each {
+        returnVal.errorMessage = returnVal.errorMessage + " " + it + ","
+    }
+    returnVal.errorMessage = returnVal.errorMessage.replaceFirst(/,$/, "")
+    return returnVal
+
+}
+
+static int compareByPattern(firstValue, secondValue, pattern) {
+    def firstInd = pattern.findIndexOf { it.toLowerCase() == firstValue.toLowerCase() }
+    def secondInd = pattern.findIndexOf { it.toLowerCase() == secondValue.toLowerCase() }
+    return secondInd.compareTo(firstInd);
+
+}
+
+static boolean skipCheckingMutatiesoordOrdering(request){
+    def rootNames = ['braGHO_Lk03']
+    return rootNames.contains(request.getLocalName())
+}
+
+
+------------------------------------
+
+

@@ -1,0 +1,11 @@
+<env:Envelope 
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+    <env:Header/>
+    <env:Body>
+        <env:Fault>
+            <faultcode>env:Client</faultcode>
+            <faultstring>OT10999</faultstring>
+            <detail>XSD mapping is not defined for namespace URI [http://schemas.xmlsoap.org/soap/envelope/]</detail>
+        </env:Fault>
+    </env:Body>
+</env:Envelope>

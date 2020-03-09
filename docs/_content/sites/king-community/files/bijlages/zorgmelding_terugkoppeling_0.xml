@@ -1,0 +1,40 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<ns2:zorgmeldingTerugkoppelingDi01 xmlns:ns1="http://www.egem.nl/StUF/StUF0301" xmlns:ns2="http://www.stufstandaarden.nl/koppelvlak/jz0100" xmlns:ns3="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:ns4="http://www.egem.nl/StUF/sector/bg/0310" xmlns:xmime="http://www.w3.org/2005/05/xmlmime">
+			<ns2:stuurgegevens>
+				<ns1:berichtcode>Di01</ns1:berichtcode>
+				<ns1:zender>
+					<ns1:organisatie>123480</ns1:organisatie>
+					<ns1:applicatie>1234-DEADBEEF</ns1:applicatie>
+				</ns1:zender>
+				<ns1:ontvanger>
+					<ns1:organisatie>123480</ns1:organisatie>
+					<ns1:applicatie>Politie-applicatie</ns1:applicatie>
+				</ns1:ontvanger>
+				<ns1:referentienummer>5</ns1:referentienummer>
+				<ns1:tijdstipBericht>20151203</ns1:tijdstipBericht>
+				<ns1:functie>zorgmeldingTerugkoppelingDi01</ns1:functie>
+			</ns2:stuurgegevens>
+			<ns2:object ns1:entiteittype="ZAK">
+				<ns3:identificatie ns1:noValue="geenWaarde"/>
+				<ns3:kenmerk>
+					<ns3:kenmerk>PL17P0-2014156749</ns3:kenmerk>
+					<ns3:bron>Zorgmelding</ns3:bron>
+				</ns3:kenmerk>
+				<ns3:resultaat>
+					<ns3:omschrijving>Geen actie nodig</ns3:omschrijving>
+				</ns3:resultaat>
+				<ns1:extraElementen>
+					<ns1:extraElement naam="vervolgActie"/>
+					<ns1:extraElement naam="vtoIndicatie">false</ns1:extraElement>
+				</ns1:extraElementen>
+				<ns3:isVan ns1:entiteittype="ZAKZKT" ns1:noValue="geenWaarde">
+					<ns3:gerelateerde xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				</ns3:isVan>
+				<ns3:heeftAlsInitiator ns1:entiteittype="ZAKBTRINI" ns1:noValue="geenWaarde">
+					<ns3:heeftAlsAanspreekpunt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				</ns3:heeftAlsInitiator>
+			</ns2:object>
+		</ns2:zorgmeldingTerugkoppelingDi01>
+	</soap:Body>
+</soap:Envelope>

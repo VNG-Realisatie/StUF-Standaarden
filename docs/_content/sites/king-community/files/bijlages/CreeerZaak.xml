@@ -1,0 +1,73 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+	<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<creeerZaak_ZakLk01 xmlns="http://www.stufstandaarden.nl/koppelvlak/zds0120">
+			<stuurgegevens xmlns="http://www.egem.nl/StUF/sector/zkn/0310">
+				<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk01</berichtcode>
+				<zender xmlns="http://www.egem.nl/StUF/StUF0301">
+					<organisatie>Andes</organisatie>
+					<applicatie>LTC</applicatie>
+				</zender>
+				<ontvanger xmlns="http://www.egem.nl/StUF/StUF0301">
+					<organisatie>KING</organisatie>
+					<applicatie>Testplatform</applicatie>
+				</ontvanger>
+				<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">1</referentienummer>
+				<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">20171026031740</tijdstipBericht>
+				<entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">ZAK</entiteittype>
+			</stuurgegevens>
+			<parameters xmlns="http://www.egem.nl/StUF/sector/zkn/0310">
+				<mutatiesoort xmlns="http://www.egem.nl/StUF/StUF0301">T</mutatiesoort>
+				<indicatorOvername xmlns="http://www.egem.nl/StUF/StUF0301">V</indicatorOvername>
+			</parameters>
+			<object a:entiteittype="ZAK" a:verwerkingssoort="T" a:sleutelVerzendend="LTCAPID" a:sleutelOntvangend="TEST" xmlns="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:a="http://www.egem.nl/StUF/StUF0301">
+				<identificatie>123445567</identificatie>
+				<omschrijving>Test</omschrijving>
+				<toelichting>Test</toelichting>
+				<kenmerk>
+					<kenmerk>13113</kenmerk>
+					<bron>Andes</bron>
+				</kenmerk>
+				<resultaat>
+					<omschrijving>toegekend</omschrijving>
+					<toelichting>toelichting</toelichting>
+				</resultaat>
+				<startdatum>20171026</startdatum>
+				<registratiedatum>20171026</registratiedatum>
+				<publicatiedatum xsi:nil="true"/>
+				<einddatumGepland xsi:nil="true"/>
+				<uiterlijkeEinddatum xsi:nil="true"/>
+				<einddatum xsi:nil="true"/>
+				<opschorting xsi:nil="true"/>
+				<verlenging xsi:nil="true"/>
+				<betalingsIndicatie xsi:nil="true"/>
+				<laatsteBetaaldatum xsi:nil="true"/>
+				<archiefnominatie xsi:nil="true"/>
+				<datumVernietigingDossier xsi:nil="true"/>
+				<zaakniveau>1</zaakniveau>
+				<deelzakenIndicatie>N</deelzakenIndicatie>
+				<a:tijdstipRegistratie>20171026031740</a:tijdstipRegistratie>
+				<isVan a:entiteittype="ZAKZKT" a:verwerkingssoort="T">
+					<gerelateerde a:entiteittype="ZKT" a:verwerkingssoort="I">
+						<omschrijving xsi:nil="true"/>
+						<code>TEST</code>
+						<ingangsdatumObject xsi:nil="true"/>
+					</gerelateerde>
+				</isVan>
+				<heeftAlsInitiator a:entiteittype="ZAKBTRINI" a:verwerkingssoort="T">
+					<gerelateerde>
+						<vestiging a:entiteittype="VES" a:verwerkingssoort="T" a:sleutelOntvangend="TEST">
+							<vestigingsNummer xmlns="http://www.egem.nl/StUF/sector/bg/0310">123456789012</vestigingsNummer>
+							<authentiek a:metagegeven="true" xmlns="http://www.egem.nl/StUF/sector/bg/0310">N</authentiek>
+							<handelsnaam xsi:nil="true" xmlns="http://www.egem.nl/StUF/sector/bg/0310"/>
+						</vestiging>
+					</gerelateerde>
+					<code xsi:nil="true"/>
+					<omschrijving xsi:nil="true"/>
+					<toelichting xsi:nil="true"/>
+					<a:tijdstipRegistratie xsi:nil="true"/>
+					<heeftAlsAanspreekpunt xsi:nil="true"/>
+				</heeftAlsInitiator>
+			</object>
+		</creeerZaak_ZakLk01>
+	</s:Body>
+</s:Envelope>

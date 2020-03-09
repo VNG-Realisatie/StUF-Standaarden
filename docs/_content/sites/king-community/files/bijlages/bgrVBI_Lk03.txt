@@ -1,0 +1,280 @@
+<BG:bgrVBI_Lk03 xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<BG:stuurgegevens>
+		<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk03</berichtcode>
+		<StUF:zender>
+			<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+			<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">BAG</applicatie>
+			<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			<gebruiker xmlns="http://www.egem.nl/StUF/StUF0301">exectoken-141849</gebruiker>
+		</StUF:zender>
+		<StUF:ontvanger>
+			<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+			<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">WOZ</applicatie>
+			<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+		</StUF:ontvanger>
+		<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">5636705225045509686</referentienummer>
+		<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2014040411013000</tijdstipBericht>
+		<functie xmlns="http://www.egem.nl/StUF/StUF0301">bgrVBI</functie>
+	</BG:stuurgegevens>
+	<BG:vboLk01-afvoeren>
+		<BG:stuurgegevens>
+			<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk01</berichtcode>
+			<StUF:zender>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">BAG</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:zender>
+			<StUF:ontvanger>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">WOZ</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:ontvanger>
+			<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">5670316975085400673</referentienummer>
+			<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2014040411012900</tijdstipBericht>
+			<entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">TGO</entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+			<mutatiesoort xmlns="http://www.egem.nl/StUF/StUF0301">W</mutatiesoort>
+			<indicatorOvername xmlns="http://www.egem.nl/StUF/StUF0301">V</indicatorOvername>
+		</BG:parameters>
+		<BG:object p7:entiteittype="TGO" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600010000234796</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Verblijfsobject</BG:typering>
+			<BG:adresAanduidingGrp>
+				<BG:num.identificatie>5600200000012352</BG:num.identificatie>
+				<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+				<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+				<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+				<BG:aoa.postcode>1954ML</BG:aoa.postcode>
+				<BG:aoa.huisnummer>16</BG:aoa.huisnummer>
+				<BG:aoa.huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<BG:aoa.huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<BG:ogo.locatieAanduiding p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</BG:adresAanduidingGrp>
+			<BG:aot.status>Verblijfsobject in gebruik</BG:aot.status>
+			<BG:gbo.statusVoortgangBouw p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:inOnderzoek groepsnaam="BGR-gegevens" p7:metagegeven="true" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<brondocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BGR-gegevens" p7:metagegeven="true">
+				<BG:identificatie>41475</BG:identificatie>
+				<BG:datum>19800701</BG:datum>
+			</brondocument>
+			<BG:einddatumObject p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:beginGeldigheid>19800701000000</p7:beginGeldigheid>
+				<p7:eindGeldigheid>20060331000000</p7:eindGeldigheid>
+			</p7:tijdvakGeldigheid>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BGR-VBI</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">19800701000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG">20060331000000</p7:extraElement>
+			</p7:extraElementen>
+		</BG:object>
+		<BG:object p7:entiteittype="TGO" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600010000234796</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Verblijfsobject</BG:typering>
+			<BG:adresAanduidingGrp>
+				<BG:num.identificatie>5600200000012352</BG:num.identificatie>
+				<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+				<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+				<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+				<BG:aoa.postcode>1954ML</BG:aoa.postcode>
+				<BG:aoa.huisnummer>16</BG:aoa.huisnummer>
+				<BG:aoa.huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<BG:aoa.huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<BG:ogo.locatieAanduiding p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</BG:adresAanduidingGrp>
+			<BG:aot.status>Verblijfsobject ingetrokken</BG:aot.status>
+			<BG:gbo.statusVoortgangBouw p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:inOnderzoek groepsnaam="BGR-gegevens" p7:metagegeven="true" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<brondocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BGR-gegevens" p7:metagegeven="true">
+				<BG:identificatie>64243</BG:identificatie>
+				<BG:datum>20060331</BG:datum>
+			</brondocument>
+			<BG:einddatumObject>20060331</BG:einddatumObject>
+			<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:beginGeldigheid>20060331000000</p7:beginGeldigheid>
+				<p7:eindGeldigheid p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</p7:tijdvakGeldigheid>
+			<p7:tijdstipRegistratie xmlns="http://www.egem.nl/StUF/sector/bg/0310">20140404110129</p7:tijdstipRegistratie>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BGR-VBI</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">20060331000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</p7:extraElementen>
+		</BG:object>
+	</BG:vboLk01-afvoeren>
+	<BG:aoaLk01-afvoeren>
+		<BG:stuurgegevens>
+			<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk01</berichtcode>
+			<StUF:zender>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">BAG</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:zender>
+			<StUF:ontvanger>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">WOZ</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:ontvanger>
+			<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">4707348717624801021</referentienummer>
+			<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2014040411013000</tijdstipBericht>
+			<entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">AOA</entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+			<mutatiesoort xmlns="http://www.egem.nl/StUF/StUF0301">W</mutatiesoort>
+			<indicatorOvername xmlns="http://www.egem.nl/StUF/StUF0301">V</indicatorOvername>
+		</BG:parameters>
+		<BG:object p7:entiteittype="AOA" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600200000012352</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Nummeraanduiding</BG:typering>
+			<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+			<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+			<BG:huisnummer>16</BG:huisnummer>
+			<BG:huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:postcode>1954ML</BG:postcode>
+			<BG:num.status>Naamgeving uitgegeven</BG:num.status>
+			<BG:inOnderzoek p7:metagegeven="true" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<bronDocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BRA-gegevens" p7:metagegeven="true">
+				<BG:identificatie>36483</BG:identificatie>
+				<BG:datum>19800701</BG:datum>
+			</bronDocument>
+			<BG:einddatumObject p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:beginGeldigheid>19800701000000</p7:beginGeldigheid>
+				<p7:eindGeldigheid>20060331000000</p7:eindGeldigheid>
+			</p7:tijdvakGeldigheid>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BGR-VBI</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">19800701000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG">20060331000000</p7:extraElement>
+			</p7:extraElementen>
+		</BG:object>
+		<BG:object p7:entiteittype="AOA" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600200000012352</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:typering>Nummeraanduiding</BG:typering>
+			<BG:wpl.woonplaatsNaam>Het Nieuwe Dorp</BG:wpl.woonplaatsNaam>
+			<BG:gor.openbareRuimteNaam>Hyacintenlaan</BG:gor.openbareRuimteNaam>
+			<BG:huisnummer>16</BG:huisnummer>
+			<BG:huisletter p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:huisnummertoevoeging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:postcode>1954ML</BG:postcode>
+			<BG:num.status>Naamgeving ingetrokken</BG:num.status>
+			<BG:inOnderzoek p7:metagegeven="true" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<bronDocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BRA-gegevens" p7:metagegeven="true">
+				<BG:identificatie>64243</BG:identificatie>
+				<BG:datum>20060331</BG:datum>
+			</bronDocument>
+			<BG:einddatumObject>20060331</BG:einddatumObject>
+			<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:beginGeldigheid>20060331000000</p7:beginGeldigheid>
+				<p7:eindGeldigheid p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</p7:tijdvakGeldigheid>
+			<p7:tijdstipRegistratie xmlns="http://www.egem.nl/StUF/sector/bg/0310">20140405110129</p7:tijdstipRegistratie>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BGR-VBI</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">20060331000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</p7:extraElementen>
+		</BG:object>
+	</BG:aoaLk01-afvoeren>
+	<BG:pndLk01>
+		<BG:stuurgegevens>
+			<berichtcode xmlns="http://www.egem.nl/StUF/StUF0301">Lk01</berichtcode>
+			<StUF:zender>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">BAG</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:zender>
+			<StUF:ontvanger>
+				<organisatie xmlns="http://www.egem.nl/StUF/StUF0301">1234</organisatie>
+				<applicatie xmlns="http://www.egem.nl/StUF/StUF0301">WOZ</applicatie>
+				<administratie xmlns="http://www.egem.nl/StUF/StUF0301"/>
+			</StUF:ontvanger>
+			<referentienummer xmlns="http://www.egem.nl/StUF/StUF0301">5204653111077214535</referentienummer>
+			<tijdstipBericht xmlns="http://www.egem.nl/StUF/StUF0301">2014040411013000</tijdstipBericht>
+			<entiteittype xmlns="http://www.egem.nl/StUF/StUF0301">PND</entiteittype>
+		</BG:stuurgegevens>
+		<BG:parameters>
+			<mutatiesoort xmlns="http://www.egem.nl/StUF/StUF0301">W</mutatiesoort>
+			<indicatorOvername xmlns="http://www.egem.nl/StUF/StUF0301">V</indicatorOvername>
+		</BG:parameters>
+		<BG:object p7:entiteittype="PND" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600100000000409</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:geometrie>
+				<Polygon xmlns="http://www.opengis.net/gml" srsDimension="2" srsName="urn:opengis:def:crs:EPSG::28992">
+					<exterior>
+						<LinearRing srsDimension="2" srsName="urn:opengis:def:crs:EPSG::28992">
+							<posList count="5" srsDimension="2" srsName="urn:opengis:def:crs:EPSG::28992">2000 607000 2050 607000 2050 607050 2000 607050 2000 607000</posList>
+						</LinearRing>
+					</exterior>
+				</Polygon>
+			</BG:geometrie>
+			<BG:inwinningswijzeGeometrieBovenaanzicht p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:geometrieOpMaaiveld p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:inwinningswijzeGeometrieMaaiveld p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:oppervlakte p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:brutoInhoud p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:laagsteBouwlaag p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:hoogsteBouwlaag p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:relatieveHoogteligging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:status>Pand in gebruik</BG:status>
+			<BG:statusVoortgangBouw p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<brondocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BGR-gegevens" p7:metagegeven="true">
+				<BG:identificatie>41475</BG:identificatie>
+				<BG:datum>19800701</BG:datum>
+			</brondocument>
+			<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:beginGeldigheid>19800701000000</p7:beginGeldigheid>
+				<p7:eindGeldigheid>20060331000000</p7:eindGeldigheid>
+			</p7:tijdvakGeldigheid>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BGR-VBI</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">19800701000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG">20060331000000</p7:extraElement>
+			</p7:extraElementen>
+		</BG:object>
+		<BG:object p7:entiteittype="PND" p7:verwerkingssoort="W" xmlns:p7="http://www.egem.nl/StUF/StUF0301">
+			<BG:identificatie>5600100000000409</BG:identificatie>
+			<BG:authentiek p7:metagegeven="true">J</BG:authentiek>
+			<BG:geometrie>
+				<Polygon xmlns="http://www.opengis.net/gml" srsDimension="2" srsName="urn:opengis:def:crs:EPSG::28992">
+					<exterior>
+						<LinearRing srsDimension="2" srsName="urn:opengis:def:crs:EPSG::28992">
+							<posList count="5" srsDimension="2" srsName="urn:opengis:def:crs:EPSG::28992">2000 607000 2050 607000 2050 607050 2000 607050 2000 607000</posList>
+						</LinearRing>
+					</exterior>
+				</Polygon>
+			</BG:geometrie>
+			<BG:inwinningswijzeGeometrieBovenaanzicht p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:geometrieOpMaaiveld p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:inwinningswijzeGeometrieMaaiveld p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:oppervlakte p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:brutoInhoud p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:laagsteBouwlaag p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:hoogsteBouwlaag p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:relatieveHoogteligging p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<BG:status>Pand in gebruik (niet ingemeten)</BG:status>
+			<BG:statusVoortgangBouw p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			<brondocument xmlns="http://www.egem.nl/StUF/sector/bg/0310" groepsnaam="BGR-gegevens" p7:metagegeven="true">
+				<BG:identificatie>64243</BG:identificatie>
+				<BG:datum>20060331</BG:datum>
+			</brondocument>
+			<p7:tijdvakGeldigheid xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:beginGeldigheid>20060331000000</p7:beginGeldigheid>
+				<p7:eindGeldigheid p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</p7:tijdvakGeldigheid>
+			<p7:tijdstipRegistratie xmlns="http://www.egem.nl/StUF/sector/bg/0310">20140406110129</p7:tijdstipRegistratie>
+			<p7:extraElementen xmlns="http://www.egem.nl/StUF/sector/bg/0310">
+				<p7:extraElement naam="codeGebeurtenis">BGR-VBI</p7:extraElement>
+				<p7:extraElement naam="begindatumTijdvakGeldigheidBAG">20060331000000</p7:extraElement>
+				<p7:extraElement naam="einddatumTijdvakGeldigheidBAG" p7:noValue="geenWaarde" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+			</p7:extraElementen>
+		</BG:object>
+	</BG:pndLk01>
+</BG:bgrVBI_Lk03>

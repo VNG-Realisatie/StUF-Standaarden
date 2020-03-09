@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.egem.nl/StUF/sector/zkn/0310" xmlns:stuf="http://www.egem.nl/StUF/StUF0301">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <genereerDocumentIdentificatie_Di02>
+         <stuurgegevens>
+            <stuf:berichtcode>Di02</stuf:berichtcode>
+            <stuf:zender>
+               <stuf:applicatie>XENTIAL</stuf:applicatie>
+               <stuf:gebruiker>ws03\adm.izis</stuf:gebruiker>
+            </stuf:zender>
+            <stuf:ontvanger>
+               <stuf:applicatie>IZIS</stuf:applicatie>
+            </stuf:ontvanger>
+            <stuf:functie>genereerDocumentidentificatie</stuf:functie>
+         </stuurgegevens>
+         <parameters>
+            <zaakIdentificatie>123456</zaakIdentificatie>
+         </parameters>
+      </genereerDocumentIdentificatie_Di02>
+   </soapenv:Body>
+</soapenv:Envelope>

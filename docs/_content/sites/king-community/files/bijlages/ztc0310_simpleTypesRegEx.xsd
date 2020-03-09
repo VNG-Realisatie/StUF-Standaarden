@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 rel. 2 sp2 (http://www.altova.com) by Robert Melskens (Kwaliteits Instituut Nederlandse Gemeenten) -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:stuf="http://www.egem.nl/StUF/StUF0301" xmlns:bg="http://www.egem.nl/StUF/sector/bg/0310" xmlns:ztc="http://www.kinggemeenten.nl/ztc0310" targetNamespace="http://www.kinggemeenten.nl/ztc0310" elementFormDefault="qualified" attributeFormDefault="unqualified" version="031001">
+	<annotation>
+		<documentation>
+			   Schema met de binnen ztc0310 gebruikte StUF-ZTC simpleTypes.
+
+			   Wijzigingen t.b.v. patch 21 (1-1-2015) vergeleken met versie 010000 zijn de volgende wijzigingen doorgevoerd:			
+			   - Waarde van het attribute 'version' gecorrigeerd naar '031001'.
+			   - ERR0353: Het schema is voorzien van de afgesproken structuur in 'appinfo'
+			
+        </documentation>
+		<appinfo>
+			<StUF:onderdeel>http://www.kinggemeenten.nl/ztc0310</StUF:onderdeel>
+			<StUF:patch>22</StUF:patch>
+			<StUF:patchdatum>20150701</StUF:patchdatum>
+			<StUF:schemaversie>1</StUF:schemaversie>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.egem.nl/StUF/StUF0301" schemaLocation="../../0301/stuf0301.xsd"/>
+	<import namespace="http://www.egem.nl/StUF/sector/bg/0310" schemaLocation="../../bg0310/entiteiten/bg0310_simpleTypes.xsd"/>
+	<!-- Simpletypes en ComplexTypes voor de zaaktypecatalogus! -->
+	<complexType name="Aanleiding-e">
+		<simpleContent>
+			<extension base="ztc:Aanleiding">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="AardRelatie-e">
+		<simpleContent>
+			<extension base="ztc:AardRelatie">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Archiefactietermijn-e">
+		<simpleContent>
+			<extension base="ztc:ArchiefActieTermijn">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Archiefcode-e">
+		<simpleContent>
+			<extension base="ztc:Archiefcode">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Archiefnominatie-e">
+		<simpleContent>
+			<extension base="ztc:Archiefnominatie">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Broncatalogus-e">
+		<simpleContent>
+			<extension base="ztc:Broncatalogus">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="BrondatumProcedure-e">
+		<simpleContent>
+			<extension base="ztc:BrondatumProcedure">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Bronzaaktype-e">
+		<simpleContent>
+			<extension base="ztc:Bronzaaktype">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Categorie-e">
+		<simpleContent>
+			<extension base="ztc:Categorie">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Code-e">
+		<simpleContent>
+			<extension base="ztc:Code">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="ComplexType-e">
+		<simpleContent>
+			<extension base="ztc:ComplexType">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="ContactpersoonNaam-e">
+		<simpleContent>
+			<extension base="ztc:ContactpersoonNaam">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Doel-e">
+		<simpleContent>
+			<extension base="ztc:Doel">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Domein-e">
+		<simpleContent>
+			<extension base="ztc:Domein">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="DomeinBroncatalogus-e">
+		<simpleContent>
+			<extension base="ztc:DomeinBroncatalogus">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Doorlooptijd-e">
+		<simpleContent>
+			<extension base="ztc:Doorlooptijd">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Definitie-e">
+		<simpleContent>
+			<extension base="ztc:Definitie">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="EigenschapNaam-e">
+		<simpleContent>
+			<extension base="ztc:EigenschapNaam">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Entiteittype-e">
+		<simpleContent>
+			<extension base="ztc:Entiteittype">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Formaat-e">
+		<simpleContent>
+			<extension base="ztc:Formaat">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Groep-e">
+		<simpleContent>
+			<extension base="ztc:Groep">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="HandelingBehandelaar-e">
+		<simpleContent>
+			<extension base="ztc:HandelingBehandelaar">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="HandelingInitiator-e">
+		<simpleContent>
+			<extension base="ztc:HandelingInitiator">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Herkomst-e">
+		<simpleContent>
+			<extension base="ztc:Herkomst">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Hierarchie-e">
+		<simpleContent>
+			<extension base="ztc:Hierarchie">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Identificatie-e">
+		<simpleContent>
+			<extension base="ztc:Identificatie">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="IndicatieInternOfExtern-e">
+		<simpleContent>
+			<extension base="ztc:IndicatieInternOfExtern">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Informatiemodel-e">
+		<simpleContent>
+			<extension base="ztc:Informatiemodel">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Kardinaliteit-e">
+		<simpleContent>
+			<extension base="ztc:Kardinaliteit">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Lengte-e">
+		<simpleContent>
+			<extension base="ztc:Lengte">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Model-e">
+		<simpleContent>
+			<extension base="ztc:Model">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="NaamOEH-e">
+		<simpleContent>
+			<extension base="ztc:NaamOEH">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Naam-e">
+		<simpleContent>
+			<extension base="ztc:Naam">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Namespace-e">
+		<simpleContent>
+			<extension base="ztc:Naam">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="ObjectTypering-e">
+		<simpleContent>
+			<extension base="ztc:ObjectTypering">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Objecttype-e">
+		<simpleContent>
+			<extension base="ztc:Objecttype">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Omschrijving-e">
+		<simpleContent>
+			<extension base="ztc:Omschrijving">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Onderwerp-e">
+		<simpleContent>
+			<extension base="ztc:Onderwerp">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Opmerking-e">
+		<simpleContent>
+			<extension base="ztc:Opmerking">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="PathElement-e">
+		<simpleContent>
+			<extension base="ztc:PathElement">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Product_Dienst-e">
+		<simpleContent>
+			<extension base="ztc:Product_Dienst">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="ResultaatTypeOmschrijving-e">
+		<simpleContent>
+			<extension base="ztc:ResultaatTypeOmschrijving">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Richting-e">
+		<simpleContent>
+			<extension base="ztc:Richting">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="RolTypeOmschrijving-e">
+		<simpleContent>
+			<extension base="ztc:RolTypeOmschrijving">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Schemalocatie-e">
+		<simpleContent>
+			<extension base="ztc:Schemalocatie">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Selectielijst-e">
+		<simpleContent>
+			<extension base="ztc:Selectielijst">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Selectielijstklasse-e">
+		<simpleContent>
+			<extension base="ztc:Selectielijstklasse">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="SoortBetrokkene-e">
+		<simpleContent>
+			<extension base="ztc:SoortBetrokkene">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Statustekst-e">
+		<simpleContent>
+			<extension base="ztc:Statustekst">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Termijn-e">
+		<simpleContent>
+			<extension base="ztc:Termijn">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Toelichting-e">
+		<annotation>
+			<documentation>Toelichting</documentation>
+		</annotation>
+		<simpleContent>
+			<extension base="ztc:Toelichting">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Toelichting-r">
+		<annotation>
+			<documentation>Toelichting</documentation>
+		</annotation>
+		<simpleContent>
+			<restriction base="ztc:Toelichting-e">
+				<maxLength value="255"/>
+				<attributeGroup ref="stuf:element"/>
+			</restriction>
+		</simpleContent>
+	</complexType>
+	<complexType name="Trefwoord-e">
+		<simpleContent>
+			<extension base="ztc:Trefwoord">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Verantwoordelijke-e">
+		<simpleContent>
+			<extension base="ztc:Verantwoordelijke">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Verantwoordingsrelatie-e">
+		<simpleContent>
+			<extension base="ztc:Verantwoordingsrelatie">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="VertrouwelijkAanduiding-e">
+		<simpleContent>
+			<extension base="ztc:VertrouwelijkAanduiding">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Volgnummer-e">
+		<simpleContent>
+			<extension base="ztc:Volgnummer">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Volgnummer-r">
+		<simpleContent>
+			<restriction base="ztc:Volgnummer-e">
+				<pattern value="0*\d{0,3}\d"/>
+				<attributeGroup ref="stuf:element"/>
+			</restriction>
+		</simpleContent>
+	</complexType>
+	<complexType name="Vraag-e">
+		<simpleContent>
+			<extension base="ztc:Vraag">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="Waardenverzameling-e">
+		<simpleContent>
+			<extension base="ztc:Waardenverzameling">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="ZaakCategorie-e">
+		<simpleContent>
+			<extension base="ztc:ZaakCategorie">
+				<attributeGroup ref="stuf:element"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<!-- Onderstaand een definitie van de gebruikte simple types -->
+	<simpleType name="Aanleiding">
+		<restriction base="string">
+			<maxLength value="1000"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="AardRelatie">
+		<restriction base="string">
+			<enumeration value=""/>
+			<enumeration value="is vervolg op"/>
+			<enumeration value="draagt bij"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ArchiefActieTermijn">
+		<restriction base="integer">
+			<pattern value="-?0*\d{0,4}"/>
+			<totalDigits value="4"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Archiefcode">
+		<restriction base="string">
+			<maxLength value="20"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Archiefnominatie">
+		<restriction base="string">
+			<enumeration value=""/>
+			<enumeration value="Blijvend bewaren"/>
+			<enumeration value="Vernietigen"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Broncatalogus">
+		<restriction base="string">
+			<maxLength value="30"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="BrondatumProcedure">
+		<restriction base="string">
+			<enumeration value=""/>
+			<enumeration value="afgehandeld"/>
+			<enumeration value="ingangsdatum besluit"/>
+			<enumeration value="vervaldatum besluit"/>
+			<enumeration value="eigenschap"/>
+			<enumeration value="ander datumkenmerk"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Bronzaaktype">
+		<restriction base="string">
+			<maxLength value="30"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Categorie">
+		<restriction base="string">
+			<maxLength value="40"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Code">
+		<restriction base="string">
+			<maxLength value="10"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ComplexType">
+		<restriction base="string">
+			<maxLength value="80"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ContactpersoonNaam">
+		<restriction base="string">
+			<maxLength value="40"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Datum">
+		<annotation>
+			<documentation>N8 (JJJJMMDD)</documentation>
+		</annotation>
+		<restriction base="string">
+			<pattern value="(\d{8})?"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Definitie">
+		<restriction base="string">
+			<maxLength value="255"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Doorlooptijd">
+		<restriction base="string">
+			<pattern value="(0*[1-9]\d{0,2})?"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Doel">
+		<restriction base="string">
+			<maxLength value="1000"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Domein">
+		<restriction base="string">
+			<maxLength value="5"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="DomeinBroncatalogus">
+		<restriction base="string">
+			<maxLength value="30"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="EigenschapNaam">
+		<restriction base="string">
+			<maxLength value="20"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Entiteittype">
+		<restriction base="string">
+			<maxLength value="80"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Formaat">
+		<restriction base="string">
+			<maxLength value="20"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Groep">
+		<restriction base="string">
+			<maxLength value="32"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="HandelingInitiator">
+		<restriction base="string">
+			<maxLength value="20"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="HandelingBehandelaar">
+		<restriction base="string">
+			<maxLength value="20"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Herkomst">
+		<restriction base="string">
+			<maxLength value="12"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Hierarchie">
+		<restriction base="string">
+			<maxLength value="80"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Identificatie">
+		<restriction base="positiveInteger">
+			<pattern value="(0*[1-9]\d{0,4})?"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="IndicatieInternOfExtern">
+		<restriction base="string">
+			<maxLength value="6"/>
+			<enumeration value=""/>
+			<enumeration value="Intern"/>
+			<enumeration value="Extern"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Informatiemodel">
+		<restriction base="string">
+			<maxLength value="80"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Kardinaliteit">
+		<restriction base="string">
+			<maxLength value="3"/>
+			<pattern value="\d{0,3}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Lengte">
+		<restriction base="string">
+			<maxLength value="14"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Model">
+		<restriction base="string">
+			<maxLength value="30"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="NaamOEH">
+		<restriction base="string">
+			<maxLength value="50"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Naam">
+		<restriction base="string">
+			<maxLength value="80"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Namespace">
+		<restriction base="string">
+			<maxLength value="200"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ObjectTypering">
+		<restriction base="string">
+			<maxLength value="40"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Objecttype">
+		<restriction base="string">
+			<maxLength value="40"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Omschrijving">
+		<restriction base="string">
+			<maxLength value="80"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Onderwerp">
+		<restriction base="string">
+			<maxLength value="80"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Opmerking">
+		<restriction base="string">
+			<maxLength value="255"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="PathElement">
+		<restriction base="string">
+			<maxLength value="255"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Product_Dienst">
+		<restriction base="string">
+			<maxLength value="40"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ResultaatTypeOmschrijving">
+		<restriction base="string">
+			<maxLength value="20"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Richting">
+		<restriction base="string">
+			<enumeration value=""/>
+			<enumeration value="Inkomend"/>
+			<enumeration value="Intern"/>
+			<enumeration value="Uitgaand"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="RolTypeOmschrijving">
+		<restriction base="string">
+			<enumeration value=""/>
+			<enumeration value="Adviseur"/>
+			<enumeration value="Behandelaar"/>
+			<enumeration value="Belanghebbende"/>
+			<enumeration value="Beslisser"/>
+			<enumeration value="Initiator"/>
+			<enumeration value="Klantcontacter"/>
+			<enumeration value="Zaakcoördinator"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Schemalocatie">
+		<restriction base="string">
+			<maxLength value="200"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Selectielijst">
+		<restriction base="string">
+			<maxLength value="500"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Selectielijstklasse">
+		<restriction base="string">
+			<maxLength value="500"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SoortBetrokkene">
+		<restriction base="string">
+			<maxLength value="80"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Statustekst">
+		<restriction base="string">
+			<maxLength value="1000"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Termijn">
+		<restriction base="string">
+			<pattern value="-?0*\d{0,3}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Toelichting">
+		<restriction base="string">
+			<maxLength value="1000"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Trefwoord">
+		<restriction base="string">
+			<maxLength value="30"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Verantwoordelijke">
+		<restriction base="string">
+			<maxLength value="50"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Verantwoordingsrelatie">
+		<restriction base="string">
+			<maxLength value="40"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="VertrouwelijkAanduiding">
+		<restriction base="string">
+			<enumeration value=""/>
+			<enumeration value="ZEER GEHEIM"/>
+			<enumeration value="GEHEIM "/>
+			<enumeration value="CONFIDENTIEEL "/>
+			<enumeration value="VERTROUWELIJK "/>
+			<enumeration value="ZAAKVERTROUWELIJK "/>
+			<enumeration value="INTERN "/>
+			<enumeration value="BEPERKT OPENBAAR "/>
+			<enumeration value="OPENBAAR "/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Volgnummer">
+		<restriction base="string">
+			<pattern value="0*\d{0,4}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Vraag">
+		<restriction base="string">
+			<maxLength value="255"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Waardenverzameling">
+		<restriction base="string">
+			<maxLength value="100"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ZaakCategorie">
+		<restriction base="string">
+			<maxLength value="40"/>
+		</restriction>
+	</simpleType>
+</schema>

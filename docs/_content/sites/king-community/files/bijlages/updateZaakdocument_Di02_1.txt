@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZKN:updateZaakdocument_Di02 xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:ZKN="http://www.egem.nl/StUF/sector/zkn/0310">
+	<ZKN:stuurgegevens>
+		<StUF:berichtcode>Di02</StUF:berichtcode>
+		<StUF:zender>
+			<StUF:applicatie>SQUITXO</StUF:applicatie>
+			<StUF:gebruiker>wouter.wigman</StUF:gebruiker>
+		</StUF:zender>
+		<StUF:functie>updateZaakdocument</StUF:functie>
+	</ZKN:stuurgegevens>
+	<ZKN:parameters>
+		<ZKN:checkedOutId>0123456789</ZKN:checkedOutId>
+	</ZKN:parameters>
+	<ZKN:edcLk02 StUF:entiteittype="EDC" StUF:functie="update"> <!-- volgens de documentatie moet dit 'object' zijn, maar dit object is hieronder pas opgenomen. Dit object 'edcLk02' hoort hier helemaal niet te zijn. -->
+		<ZKN:parameters> <!-- dit is nu verplicht, maar wat doet deze parameter met mutatiesoort hier?? -->
+			<StUF:mutatiesoort>T</StUF:mutatiesoort>
+		</ZKN:parameters>
+		<ZKN:object StUF:entiteittype="EDC" StUF:verwerkingssoort="I"> <!-- waarom is verwerkingssoort hier verplicht en mag het een willekeurige waarde hebben?? -->
+			<ZKN:identificatie>123456</ZKN:identificatie>
+			<ZKN:inhoud StUF:bestandsnaam="test.docx">RGl0IGlzIGVlbiB0ZXN0IHJlZ2Vs</ZKN:inhoud>
+		</ZKN:object>
+		<ZKN:object StUF:entiteittype="EDC" StUF:verwerkingssoort="T"> <!-- volgens de xsd mag ik hier gerust nog een paar objecten meesturen, want dit bericht is valide. Dit lijkt toch niet de bedoeling... -->
+			<ZKN:identificatie></ZKN:identificatie>
+		</ZKN:object>
+	</ZKN:edcLk02>
+</ZKN:updateZaakdocument_Di02>
