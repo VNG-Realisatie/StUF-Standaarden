@@ -2,7 +2,8 @@
 .block-kc-marked-read, 
 .forum-topic-legend, 
 .forum-post-footer, 
-.topic-reply-locked
+.topic-reply-locked, 
+#search-api-page-search-form-kc-search-page 
 {display:none;}
 .menu-block-main_menu 
 {height:50px;}
