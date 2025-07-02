@@ -1,3 +1,8 @@
+| Eigenaar | Ingevuld door |
+| --- | --- |
+| Kennis centrum Architectuur | Robert Melskens |
+<hr/>
+
 # StUF-Standaarden
 
 Om de bestaande discussie fora (discussie.kinggemeenten.nl) beter aan te laten sluiten bij de huidige omgevingen die VNG Realisatie biedt voor standaarden en het geven van feedback hierop heeft VNG Realisatie besloten deze fora in een andere vorm te gieten. Per 1 maart 2020 is de functionaliteit die we met de fora invulden overgebracht naar deze GitHub repository. Het is daarom niet meer mogelijk om discussies te starten of op een bestaande discussie te reageren via de discussie fora onder 'discussie.kinggemeenten.nl'.
