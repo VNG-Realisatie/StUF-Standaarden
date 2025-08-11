@@ -1,6 +1,6 @@
 | Eigenaar | Ingevuld door |
 | --- | --- |
-| Kennis centrum Architectuur | Robert Melskens |
+| Kennis Centrum Architectuur | Robert Melskens |
 <hr/>
 
 # StUF-Standaarden
